@@ -34,11 +34,12 @@
 		AFA58A682043FD0C00A227B9 /* secondaryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA58A672043FD0C00A227B9 /* secondaryTableViewController.swift */; };
 		AFD18C3B20FC7FB90097D158 /* secondary.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD18C3A20FC7FB90097D158 /* secondary.swift */; };
 		AFD18C4020FC87480097D158 /* chapter1logo.png in Resources */ = {isa = PBXBuildFile; fileRef = AFD18C3F20FC87480097D158 /* chapter1logo.png */; };
-		AFD6CAB9204D22B9004D931E /* calculator copy.png in Resources */ = {isa = PBXBuildFile; fileRef = AFD6CAB8204D22B9004D931E /* calculator copy.png */; };
-		AFD6CABB204D22D4004D931E /* calculator copy 2.png in Resources */ = {isa = PBXBuildFile; fileRef = AFD6CABA204D22D4004D931E /* calculator copy 2.png */; };
 		AFD6CABD204D2EC4004D931E /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD6CABC204D2EC4004D931E /* NotesViewController.swift */; };
 		AFD6CABF204D3742004D931E /* gradient_series___orange.png in Resources */ = {isa = PBXBuildFile; fileRef = AFD6CABE204D3742004D931E /* gradient_series___orange.png */; };
 		AFD6CAC1204D3B4D004D931E /* File.rtf in Resources */ = {isa = PBXBuildFile; fileRef = AFD6CAC0204D3B4D004D931E /* File.rtf */; };
+		AFF7B2002105BFEF0026D20B /* MainPageStuff.png in Resources */ = {isa = PBXBuildFile; fileRef = AFF7B1FF2105BFEE0026D20B /* MainPageStuff.png */; };
+		AFF7B2022105C0C40026D20B /* Not main page.png in Resources */ = {isa = PBXBuildFile; fileRef = AFF7B2012105C0C30026D20B /* Not main page.png */; };
+		AFF7B2042105C2190026D20B /* Screen Shot 2018-07-23 at 3.57.59 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = AFF7B2032105C2180026D20B /* Screen Shot 2018-07-23 at 3.57.59 PM.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,11 +74,12 @@
 		AFA58A672043FD0C00A227B9 /* secondaryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondaryTableViewController.swift; sourceTree = "<group>"; };
 		AFD18C3A20FC7FB90097D158 /* secondary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondary.swift; sourceTree = "<group>"; };
 		AFD18C3F20FC87480097D158 /* chapter1logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chapter1logo.png; sourceTree = "<group>"; };
-		AFD6CAB8204D22B9004D931E /* calculator copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "calculator copy.png"; path = "../../../../../../../.Trash/calculator copy.png"; sourceTree = "<group>"; };
-		AFD6CABA204D22D4004D931E /* calculator copy 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "calculator copy 2.png"; path = "../../../../../../../.Trash/calculator copy 2.png"; sourceTree = "<group>"; };
 		AFD6CABC204D2EC4004D931E /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		AFD6CABE204D3742004D931E /* gradient_series___orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gradient_series___orange.png"; sourceTree = "<group>"; };
 		AFD6CAC0204D3B4D004D931E /* File.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = File.rtf; sourceTree = "<group>"; };
+		AFF7B1FF2105BFEE0026D20B /* MainPageStuff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainPageStuff.png; sourceTree = "<group>"; };
+		AFF7B2012105C0C30026D20B /* Not main page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Not main page.png"; sourceTree = "<group>"; };
+		AFF7B2032105C2180026D20B /* Screen Shot 2018-07-23 at 3.57.59 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2018-07-23 at 3.57.59 PM.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,14 +154,15 @@
 				AF2763BE20720E780070787B /* cooltext280879586962584 copy.png */,
 				AF47CE9F2072261D00949253 /* OrionLogoWhite.png */,
 				AFA58A592043F0C200A227B9 /* cheatsheet copy.png */,
+				AFF7B2012105C0C30026D20B /* Not main page.png */,
+				AFF7B2032105C2180026D20B /* Screen Shot 2018-07-23 at 3.57.59 PM.png */,
 				AFA58A5A2043F0C200A227B9 /* cheatsheet.png */,
 				AF8B79B92084900B003EC1E5 /* Screen Shot 2018-04-16 at 4.01.50 PM.png */,
-				AFD6CABA204D22D4004D931E /* calculator copy 2.png */,
-				AFD6CAB8204D22B9004D931E /* calculator copy.png */,
 				AFA58A532043EFA400A227B9 /* calculator.png */,
 				AFA58A3C2043EA8B00A227B9 /* Screen Shot 2018-01-12 at 8.46.23 AM.png */,
 				AFA58A5F2043F0C900A227B9 /* note copy 2.png */,
 				AFA58A612043F0CA00A227B9 /* note copy.png */,
+				AFF7B1FF2105BFEE0026D20B /* MainPageStuff.png */,
 				AFA58A602043F0C900A227B9 /* note.png */,
 				AFD6CABE204D3742004D931E /* gradient_series___orange.png */,
 			);
@@ -249,20 +252,21 @@
 				AFD18C4020FC87480097D158 /* chapter1logo.png in Resources */,
 				AF47CEA02072261D00949253 /* OrionLogoWhite.png in Resources */,
 				AF3CF93520E0D37200082AA3 /* download.png in Resources */,
+				AFF7B2042105C2190026D20B /* Screen Shot 2018-07-23 at 3.57.59 PM.png in Resources */,
 				AF8B79BA2084900B003EC1E5 /* Screen Shot 2018-04-16 at 4.01.50 PM.png in Resources */,
 				AFA58A352043E84200A227B9 /* LaunchScreen.storyboard in Resources */,
 				AFA58A322043E84200A227B9 /* Assets.xcassets in Resources */,
-				AFD6CABB204D22D4004D931E /* calculator copy 2.png in Resources */,
 				AFD6CAC1204D3B4D004D931E /* File.rtf in Resources */,
 				AFA58A632043F0CA00A227B9 /* note.png in Resources */,
+				AFF7B2022105C0C40026D20B /* Not main page.png in Resources */,
 				AFA58A562043EFA400A227B9 /* calculator.png in Resources */,
 				AF47CE9E207225DB00949253 /* WhatsApp Image 2018-04-02 at 4.40.20 PM.png in Resources */,
 				AFA58A302043E84200A227B9 /* Main.storyboard in Resources */,
+				AFF7B2002105BFEF0026D20B /* MainPageStuff.png in Resources */,
 				AFD6CABF204D3742004D931E /* gradient_series___orange.png in Resources */,
 				AFA58A5E2043F0C200A227B9 /* cheatsheet copy 2.png in Resources */,
 				AFA58A5C2043F0C200A227B9 /* cheatsheet copy.png in Resources */,
 				AF2763C2207210460070787B /* ethnocentric rg it.ttf in Resources */,
-				AFD6CAB9204D22B9004D931E /* calculator copy.png in Resources */,
 				AFA58A642043F0CA00A227B9 /* note copy.png in Resources */,
 				AF2763BF20720E780070787B /* cooltext280879586962584 copy.png in Resources */,
 				AF8B79B8208483E6003EC1E5 /* 10314-white-square-button.png in Resources */,
