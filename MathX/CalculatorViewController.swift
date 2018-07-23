@@ -20,14 +20,25 @@ class CalculatorViewController: UIViewController {
     var empty = true
     var first = 0
     var operation = ""
-    
+    var noddd = true
     @IBAction func buttton(_ sender: UIButton) {
+        if(noddd == true){
         label.text = ""
         label.text = label.text! + String(sender.tag)
          number = Int(label.text!)!
         operation = operation + String(number)
         print(operation)
         label.text = operation
+        }else{
+            operation = ""
+            label.text = "" + String(sender.tag)
+            number = Int(label.text!)!
+            print("ok2")
+            operation = operation + String(number)
+            print("ok3")
+            label.text = operation
+            noddd = true
+        }
     }
     
     @IBAction func operations(_ sender: UIButton) {
@@ -48,6 +59,7 @@ class CalculatorViewController: UIViewController {
         }else if (sender.titleLabel?.text == "-"){
             if(empty == false){
                 first = Int(number)
+                
                 operation = operation + "-"
                 label.text = operation
             }
@@ -55,7 +67,7 @@ class CalculatorViewController: UIViewController {
         }else if (sender.titleLabel?.text == "x"){
             if(empty == false){
                 first = Int(number)
-                if(String(operation.last!) == "*" || String(operation.last!) == "/"){
+                if(String(operation.last!) == "*" || String(operation.last!) == "/" || String(operation.last!) == "-" || String(operation.last!) == "+"){
                     print("error")
                 }else{
                 operation = operation + "*"
@@ -67,7 +79,7 @@ class CalculatorViewController: UIViewController {
             if(empty == false){
                 first = Int(number)
                 print(operation.last!)
-                if(String(operation.last!) == "*" || String(operation.last!) == "/"){
+                if(String(operation.last!) == "*" || String(operation.last!) == "/" || String(operation.last!) == "-" || String(operation.last!) == "+"){
                     print("error")
                 }else{
                 operation = operation + "/"
@@ -76,11 +88,12 @@ class CalculatorViewController: UIViewController {
             }
             
         }else if (sender.titleLabel?.text == "="){
-    print(operation)
-            print(NSExpression(format:operation))
-            if(operation.replacingOccurrences(of: "+", with: "") == "" || operation.replacingOccurrences(of: "-", with: "") == "" || operation.replacingOccurrences(of: "/", with: "") == "" || operation.replacingOccurrences(of: "*", with: "") == ""){
+    print(Int(String(operation.last!)))
+            if(operation.replacingOccurrences(of: "+", with: "") == "" || operation.replacingOccurrences(of: "-", with: "") == "" || operation.replacingOccurrences(of: "/", with: "") == "" || operation.replacingOccurrences(of: "*", with: "") == "" || (Int(String(operation.last!)) == nil)){
+                print("error,user stupid")
                 return
-            }
+            }else{
+            print(NSExpression(format:operation))
             var hi = operation.replacingOccurrences(of: "+", with: ".0+")
              hi = hi.replacingOccurrences(of: "-", with: ".0-")
              hi = hi.replacingOccurrences(of: "/", with: ".0/")
@@ -95,13 +108,24 @@ class CalculatorViewController: UIViewController {
             hi = hi.replacingOccurrences(of: ".7.0", with: ".7")
             hi = hi.replacingOccurrences(of: ".8.0", with: ".8")
             hi = hi.replacingOccurrences(of: ".9.0", with: ".9")
+            hi = hi.replacingOccurrences(of: ".19.0", with: ".19")
+            hi = hi.replacingOccurrences(of: ".18.0", with: ".18")
+            hi = hi.replacingOccurrences(of: ".17.0", with: ".17")
+            hi = hi.replacingOccurrences(of: ".16.0", with: ".16")
+            hi = hi.replacingOccurrences(of: ".15.0", with: ".15")
+            hi = hi.replacingOccurrences(of: ".14.0", with: ".14")
+            hi = hi.replacingOccurrences(of: ".13.0", with: ".13")
+            hi = hi.replacingOccurrences(of: ".12.0", with: ".12")
+            hi = hi.replacingOccurrences(of: ".11.0", with: ".11")
+            hi = hi.replacingOccurrences(of: ".10.0", with: ".10")
             print(hi)
             let expn = NSExpression(format:hi)
             var labe:Double = expn.expressionValue(with: nil, context: nil) as! Double
             label.text = String(describing: labe)
             operation = ""
             operation =  operation + String(labe.rounded(toPlaces: 1))
-            
+            noddd = false
+            }
         }
 
         print(operation)
