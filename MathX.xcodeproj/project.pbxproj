@@ -7,14 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8ED5C14D8975014CBE7F1B9B /* Pods_MathX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656BA4E6C2223DDF7BAE19AE /* Pods_MathX.framework */; };
+		AF2763BF20720E780070787B /* cooltext280879586962584 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = AF2763BE20720E780070787B /* cooltext280879586962584 copy.png */; };
+		AF2763C2207210460070787B /* ethnocentric rg it.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF2763C020720F440070787B /* ethnocentric rg it.ttf */; };
+		AF3CF93320E0D0D700082AA3 /* calcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3CF93220E0D0D700082AA3 /* calcViewController.swift */; };
+		AF3CF93520E0D37200082AA3 /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = AF3CF93420E0D37100082AA3 /* download.png */; };
+		AF47CE9E207225DB00949253 /* WhatsApp Image 2018-04-02 at 4.40.20 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = AF47CE9D207225DB00949253 /* WhatsApp Image 2018-04-02 at 4.40.20 PM.png */; };
+		AF47CEA02072261D00949253 /* OrionLogoWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = AF47CE9F2072261D00949253 /* OrionLogoWhite.png */; };
+		AF8B79B8208483E6003EC1E5 /* 10314-white-square-button.png in Resources */ = {isa = PBXBuildFile; fileRef = AF8B79B7208483E5003EC1E5 /* 10314-white-square-button.png */; };
+		AF8B79BA2084900B003EC1E5 /* Screen Shot 2018-04-16 at 4.01.50 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = AF8B79B92084900B003EC1E5 /* Screen Shot 2018-04-16 at 4.01.50 PM.png */; };
+		AF8B79BC208495FB003EC1E5 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8B79BB208495FB003EC1E5 /* CalculatorViewController.swift */; };
 		AFA58A2B2043E84200A227B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA58A2A2043E84200A227B9 /* AppDelegate.swift */; };
 		AFA58A2D2043E84200A227B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA58A2C2043E84200A227B9 /* ViewController.swift */; };
 		AFA58A302043E84200A227B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFA58A2E2043E84200A227B9 /* Main.storyboard */; };
 		AFA58A322043E84200A227B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFA58A312043E84200A227B9 /* Assets.xcassets */; };
 		AFA58A352043E84200A227B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFA58A332043E84200A227B9 /* LaunchScreen.storyboard */; };
+		AFA58A3D2043EA8B00A227B9 /* Screen Shot 2018-01-12 at 8.46.23 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = AFA58A3C2043EA8B00A227B9 /* Screen Shot 2018-01-12 at 8.46.23 AM.png */; };
+		AFA58A562043EFA400A227B9 /* calculator.png in Resources */ = {isa = PBXBuildFile; fileRef = AFA58A532043EFA400A227B9 /* calculator.png */; };
+		AFA58A5C2043F0C200A227B9 /* cheatsheet copy.png in Resources */ = {isa = PBXBuildFile; fileRef = AFA58A592043F0C200A227B9 /* cheatsheet copy.png */; };
+		AFA58A5D2043F0C200A227B9 /* cheatsheet.png in Resources */ = {isa = PBXBuildFile; fileRef = AFA58A5A2043F0C200A227B9 /* cheatsheet.png */; };
+		AFA58A5E2043F0C200A227B9 /* cheatsheet copy 2.png in Resources */ = {isa = PBXBuildFile; fileRef = AFA58A5B2043F0C200A227B9 /* cheatsheet copy 2.png */; };
+		AFA58A622043F0CA00A227B9 /* note copy 2.png in Resources */ = {isa = PBXBuildFile; fileRef = AFA58A5F2043F0C900A227B9 /* note copy 2.png */; };
+		AFA58A632043F0CA00A227B9 /* note.png in Resources */ = {isa = PBXBuildFile; fileRef = AFA58A602043F0C900A227B9 /* note.png */; };
+		AFA58A642043F0CA00A227B9 /* note copy.png in Resources */ = {isa = PBXBuildFile; fileRef = AFA58A612043F0CA00A227B9 /* note copy.png */; };
+		AFA58A662043F2F300A227B9 /* CheatSheetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA58A652043F2F300A227B9 /* CheatSheetTableViewController.swift */; };
+		AFA58A682043FD0C00A227B9 /* secondaryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA58A672043FD0C00A227B9 /* secondaryTableViewController.swift */; };
+		AFD18C3B20FC7FB90097D158 /* secondary.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD18C3A20FC7FB90097D158 /* secondary.swift */; };
+		AFD18C4020FC87480097D158 /* chapter1logo.png in Resources */ = {isa = PBXBuildFile; fileRef = AFD18C3F20FC87480097D158 /* chapter1logo.png */; };
+		AFD6CAB9204D22B9004D931E /* calculator copy.png in Resources */ = {isa = PBXBuildFile; fileRef = AFD6CAB8204D22B9004D931E /* calculator copy.png */; };
+		AFD6CABB204D22D4004D931E /* calculator copy 2.png in Resources */ = {isa = PBXBuildFile; fileRef = AFD6CABA204D22D4004D931E /* calculator copy 2.png */; };
+		AFD6CABD204D2EC4004D931E /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD6CABC204D2EC4004D931E /* NotesViewController.swift */; };
+		AFD6CABF204D3742004D931E /* gradient_series___orange.png in Resources */ = {isa = PBXBuildFile; fileRef = AFD6CABE204D3742004D931E /* gradient_series___orange.png */; };
+		AFD6CAC1204D3B4D004D931E /* File.rtf in Resources */ = {isa = PBXBuildFile; fileRef = AFD6CAC0204D3B4D004D931E /* File.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22A872F5A0E7487812A5305D /* Pods-MathX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MathX/Pods-MathX.debug.xcconfig"; sourceTree = "<group>"; };
+		6149B19C3D18A008AD8A8FC5 /* Pods-MathX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathX.release.xcconfig"; path = "Pods/Target Support Files/Pods-MathX/Pods-MathX.release.xcconfig"; sourceTree = "<group>"; };
+		656BA4E6C2223DDF7BAE19AE /* Pods_MathX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MathX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF2763BE20720E780070787B /* cooltext280879586962584 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cooltext280879586962584 copy.png"; sourceTree = "<group>"; };
+		AF2763C020720F440070787B /* ethnocentric rg it.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ethnocentric rg it.ttf"; sourceTree = "<group>"; };
+		AF3CF93220E0D0D700082AA3 /* calcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calcViewController.swift; sourceTree = "<group>"; };
+		AF3CF93420E0D37100082AA3 /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = download.png; sourceTree = "<group>"; };
+		AF47CE9D207225DB00949253 /* WhatsApp Image 2018-04-02 at 4.40.20 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WhatsApp Image 2018-04-02 at 4.40.20 PM.png"; sourceTree = "<group>"; };
+		AF47CE9F2072261D00949253 /* OrionLogoWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OrionLogoWhite.png; sourceTree = "<group>"; };
+		AF8B79B7208483E5003EC1E5 /* 10314-white-square-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "10314-white-square-button.png"; sourceTree = "<group>"; };
+		AF8B79B92084900B003EC1E5 /* Screen Shot 2018-04-16 at 4.01.50 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2018-04-16 at 4.01.50 PM.png"; sourceTree = "<group>"; };
+		AF8B79BB208495FB003EC1E5 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		AFA58A272043E84200A227B9 /* MathX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MathX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFA58A2A2043E84200A227B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFA58A2C2043E84200A227B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +61,23 @@
 		AFA58A312043E84200A227B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFA58A342043E84200A227B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFA58A362043E84200A227B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFA58A3C2043EA8B00A227B9 /* Screen Shot 2018-01-12 at 8.46.23 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2018-01-12 at 8.46.23 AM.png"; sourceTree = "<group>"; };
+		AFA58A532043EFA400A227B9 /* calculator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calculator.png; sourceTree = "<group>"; };
+		AFA58A592043F0C200A227B9 /* cheatsheet copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cheatsheet copy.png"; sourceTree = "<group>"; };
+		AFA58A5A2043F0C200A227B9 /* cheatsheet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cheatsheet.png; sourceTree = "<group>"; };
+		AFA58A5B2043F0C200A227B9 /* cheatsheet copy 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cheatsheet copy 2.png"; sourceTree = "<group>"; };
+		AFA58A5F2043F0C900A227B9 /* note copy 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "note copy 2.png"; sourceTree = "<group>"; };
+		AFA58A602043F0C900A227B9 /* note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = note.png; sourceTree = "<group>"; };
+		AFA58A612043F0CA00A227B9 /* note copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "note copy.png"; sourceTree = "<group>"; };
+		AFA58A652043F2F300A227B9 /* CheatSheetTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheatSheetTableViewController.swift; sourceTree = "<group>"; };
+		AFA58A672043FD0C00A227B9 /* secondaryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondaryTableViewController.swift; sourceTree = "<group>"; };
+		AFD18C3A20FC7FB90097D158 /* secondary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondary.swift; sourceTree = "<group>"; };
+		AFD18C3F20FC87480097D158 /* chapter1logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chapter1logo.png; sourceTree = "<group>"; };
+		AFD6CAB8204D22B9004D931E /* calculator copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "calculator copy.png"; path = "../../../../../../../.Trash/calculator copy.png"; sourceTree = "<group>"; };
+		AFD6CABA204D22D4004D931E /* calculator copy 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "calculator copy 2.png"; path = "../../../../../../../.Trash/calculator copy 2.png"; sourceTree = "<group>"; };
+		AFD6CABC204D2EC4004D931E /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		AFD6CABE204D3742004D931E /* gradient_series___orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gradient_series___orange.png"; sourceTree = "<group>"; };
+		AFD6CAC0204D3B4D004D931E /* File.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = File.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +85,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ED5C14D8975014CBE7F1B9B /* Pods_MathX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A3D438B03B8F58596C0A09DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				22A872F5A0E7487812A5305D /* Pods-MathX.debug.xcconfig */,
+				6149B19C3D18A008AD8A8FC5 /* Pods-MathX.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AFA58A1E2043E84200A227B9 = {
 			isa = PBXGroup;
 			children = (
 				AFA58A292043E84200A227B9 /* MathX */,
 				AFA58A282043E84200A227B9 /* Products */,
+				A3D438B03B8F58596C0A09DA /* Pods */,
+				C6942B7171D322F697338E87 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,11 +125,61 @@
 				AFA58A2A2043E84200A227B9 /* AppDelegate.swift */,
 				AFA58A2C2043E84200A227B9 /* ViewController.swift */,
 				AFA58A2E2043E84200A227B9 /* Main.storyboard */,
+				AFD18C3A20FC7FB90097D158 /* secondary.swift */,
+				AFD6CABC204D2EC4004D931E /* NotesViewController.swift */,
+				AFA58A672043FD0C00A227B9 /* secondaryTableViewController.swift */,
+				AFA58A652043F2F300A227B9 /* CheatSheetTableViewController.swift */,
+				AF8B79BB208495FB003EC1E5 /* CalculatorViewController.swift */,
+				AFD6CAC0204D3B4D004D931E /* File.rtf */,
 				AFA58A312043E84200A227B9 /* Assets.xcassets */,
 				AFA58A332043E84200A227B9 /* LaunchScreen.storyboard */,
 				AFA58A362043E84200A227B9 /* Info.plist */,
+				AF2763C020720F440070787B /* ethnocentric rg it.ttf */,
+				AFA58A3E2043EAA900A227B9 /* Photos */,
+				AF3CF93220E0D0D700082AA3 /* calcViewController.swift */,
 			);
 			path = MathX;
+			sourceTree = "<group>";
+		};
+		AFA58A3E2043EAA900A227B9 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				AFD18C3E20FC84A00097D158 /* logos */,
+				AF3CF93420E0D37100082AA3 /* download.png */,
+				AF8B79B7208483E5003EC1E5 /* 10314-white-square-button.png */,
+				AF47CE9D207225DB00949253 /* WhatsApp Image 2018-04-02 at 4.40.20 PM.png */,
+				AFA58A5B2043F0C200A227B9 /* cheatsheet copy 2.png */,
+				AF2763BE20720E780070787B /* cooltext280879586962584 copy.png */,
+				AF47CE9F2072261D00949253 /* OrionLogoWhite.png */,
+				AFA58A592043F0C200A227B9 /* cheatsheet copy.png */,
+				AFA58A5A2043F0C200A227B9 /* cheatsheet.png */,
+				AF8B79B92084900B003EC1E5 /* Screen Shot 2018-04-16 at 4.01.50 PM.png */,
+				AFD6CABA204D22D4004D931E /* calculator copy 2.png */,
+				AFD6CAB8204D22B9004D931E /* calculator copy.png */,
+				AFA58A532043EFA400A227B9 /* calculator.png */,
+				AFA58A3C2043EA8B00A227B9 /* Screen Shot 2018-01-12 at 8.46.23 AM.png */,
+				AFA58A5F2043F0C900A227B9 /* note copy 2.png */,
+				AFA58A612043F0CA00A227B9 /* note copy.png */,
+				AFA58A602043F0C900A227B9 /* note.png */,
+				AFD6CABE204D3742004D931E /* gradient_series___orange.png */,
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
+		AFD18C3E20FC84A00097D158 /* logos */ = {
+			isa = PBXGroup;
+			children = (
+				AFD18C3F20FC87480097D158 /* chapter1logo.png */,
+			);
+			path = logos;
+			sourceTree = "<group>";
+		};
+		C6942B7171D322F697338E87 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				656BA4E6C2223DDF7BAE19AE /* Pods_MathX.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +189,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFA58A392043E84200A227B9 /* Build configuration list for PBXNativeTarget "MathX" */;
 			buildPhases = (
+				02FF3BB5BA2F08D7D701AA55 /* [CP] Check Pods Manifest.lock */,
 				AFA58A232043E84200A227B9 /* Sources */,
 				AFA58A242043E84200A227B9 /* Frameworks */,
 				AFA58A252043E84200A227B9 /* Resources */,
+				7DC7CEBB905C0521EFA09E69 /* [CP] Embed Pods Frameworks */,
+				D5FAB85A0E5EA3194AAA4712 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,21 +244,101 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFA58A3D2043EA8B00A227B9 /* Screen Shot 2018-01-12 at 8.46.23 AM.png in Resources */,
+				AFA58A622043F0CA00A227B9 /* note copy 2.png in Resources */,
+				AFD18C4020FC87480097D158 /* chapter1logo.png in Resources */,
+				AF47CEA02072261D00949253 /* OrionLogoWhite.png in Resources */,
+				AF3CF93520E0D37200082AA3 /* download.png in Resources */,
+				AF8B79BA2084900B003EC1E5 /* Screen Shot 2018-04-16 at 4.01.50 PM.png in Resources */,
 				AFA58A352043E84200A227B9 /* LaunchScreen.storyboard in Resources */,
 				AFA58A322043E84200A227B9 /* Assets.xcassets in Resources */,
+				AFD6CABB204D22D4004D931E /* calculator copy 2.png in Resources */,
+				AFD6CAC1204D3B4D004D931E /* File.rtf in Resources */,
+				AFA58A632043F0CA00A227B9 /* note.png in Resources */,
+				AFA58A562043EFA400A227B9 /* calculator.png in Resources */,
+				AF47CE9E207225DB00949253 /* WhatsApp Image 2018-04-02 at 4.40.20 PM.png in Resources */,
 				AFA58A302043E84200A227B9 /* Main.storyboard in Resources */,
+				AFD6CABF204D3742004D931E /* gradient_series___orange.png in Resources */,
+				AFA58A5E2043F0C200A227B9 /* cheatsheet copy 2.png in Resources */,
+				AFA58A5C2043F0C200A227B9 /* cheatsheet copy.png in Resources */,
+				AF2763C2207210460070787B /* ethnocentric rg it.ttf in Resources */,
+				AFD6CAB9204D22B9004D931E /* calculator copy.png in Resources */,
+				AFA58A642043F0CA00A227B9 /* note copy.png in Resources */,
+				AF2763BF20720E780070787B /* cooltext280879586962584 copy.png in Resources */,
+				AF8B79B8208483E6003EC1E5 /* 10314-white-square-button.png in Resources */,
+				AFA58A5D2043F0C200A227B9 /* cheatsheet.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02FF3BB5BA2F08D7D701AA55 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MathX-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DC7CEBB905C0521EFA09E69 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MathX/Pods-MathX-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/paper-onboarding/paper_onboarding.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/paper_onboarding.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MathX/Pods-MathX-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5FAB85A0E5EA3194AAA4712 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MathX/Pods-MathX-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AFA58A232043E84200A227B9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFA58A682043FD0C00A227B9 /* secondaryTableViewController.swift in Sources */,
+				AFD6CABD204D2EC4004D931E /* NotesViewController.swift in Sources */,
+				AFD18C3B20FC7FB90097D158 /* secondary.swift in Sources */,
 				AFA58A2D2043E84200A227B9 /* ViewController.swift in Sources */,
+				AF3CF93320E0D0D700082AA3 /* calcViewController.swift in Sources */,
 				AFA58A2B2043E84200A227B9 /* AppDelegate.swift in Sources */,
+				AF8B79BC208495FB003EC1E5 /* CalculatorViewController.swift in Sources */,
+				AFA58A662043F2F300A227B9 /* CheatSheetTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +473,7 @@
 		};
 		AFA58A3A2043E84200A227B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22A872F5A0E7487812A5305D /* Pods-MathX.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +489,7 @@
 		};
 		AFA58A3B2043E84200A227B9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6149B19C3D18A008AD8A8FC5 /* Pods-MathX.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
