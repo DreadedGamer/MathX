@@ -25,19 +25,19 @@ class CalculatorViewController: UIViewController {
         print(noddd)
         if(noddd == true){
         label.text = ""
-        label.text = "" + String(sender.tag)
-        operation = operation + String(sender.tag)
+            label.text = "" + (sender.titleLabel?.text)!
+            operation = operation + (sender.titleLabel?.text)!
         print(operation)
         label.text = operation
         }else{
             if(isitfirstnumber == true){
-                operation = String(sender.tag)
+                operation = (sender.titleLabel?.text)!
                 label.text = operation
                 noddd = true
             }else{
                 label.text = ""
-                label.text = "" + String(sender.tag)
-                operation = operation + String(sender.tag)
+                label.text = "" + (sender.titleLabel?.text)!
+                operation = operation + (sender.titleLabel?.text)!
                 print(operation)
                 label.text = operation
               noddd = true
@@ -53,7 +53,7 @@ class CalculatorViewController: UIViewController {
         }
         if(sender.titleLabel?.text == "+"){
             if(empty == false){
-                first = Int(number)
+                if(operation !=  ""){
                 if(String(operation.last!) == "x" || String(operation.last!) == "÷"){
                 print("error")
                 }else{
@@ -62,16 +62,18 @@ class CalculatorViewController: UIViewController {
                 label.text = operation
                 }
             }
+            }
         }else if (sender.titleLabel?.text == "-"){
             if(empty == false){
+                 if(operation !=  ""){
                 isitfirstnumber = false
                 operation = operation + "-"
                 label.text = operation
             }
-            
+            }
         }else if (sender.titleLabel?.text == "x"){
             if(empty == false){
-                first = Int(number)
+                 if(operation !=  ""){
                 if(String(operation.last!) == "*" || String(operation.last!) == "/" || String(operation.last!) == "-" || String(operation.last!) == "+"){
                     print("error")
                 }else{
@@ -80,10 +82,10 @@ class CalculatorViewController: UIViewController {
                 label.text = operation
                 }
             }
-            
+            }
         }else if (sender.titleLabel?.text == "÷"){
             if(empty == false){
-                first = Int(number)
+                 if(operation !=  ""){
                 print(operation.last!)
                 if(String(operation.last!) == "*" || String(operation.last!) == "/" || String(operation.last!) == "-" || String(operation.last!) == "+"){
                     print("error")
@@ -93,19 +95,28 @@ class CalculatorViewController: UIViewController {
                 label.text = operation
                 }
             }
+            }
             
         }else if (sender.titleLabel?.text == "="){
-    print(Int(String(operation.last!)))
-            if(operation.replacingOccurrences(of: "+", with: "") == "" || operation.replacingOccurrences(of: "-", with: "") == "" || operation.replacingOccurrences(of: "/", with: "") == "" || operation.replacingOccurrences(of: "*", with: "") == "" || (Int(String(operation.last!)) == nil)){
+            if(operation.replacingOccurrences(of: "+", with: "") == "" || operation.replacingOccurrences(of: "-", with: "") == "" || operation.replacingOccurrences(of: "/", with: "") == "" || operation.replacingOccurrences(of: "*", with: "") == "" ){
                 print("error,user stupid")
                 return
             }else{
-            print(NSExpression(format:operation))
-                var labe:Double = operation.calculate()!
-            label.text = String(describing: labe)
-            operation = String(labe.rounded(toPlaces: 1))
-                isitfirstnumber = true
-            noddd = false
+                do {
+                    print(NSExpression(format:operation))
+                    if var labe:Double = operation.calculate()! {
+                        label.text = String(describing: labe)
+                        operation = String(labe.rounded(toPlaces: 1))
+                        isitfirstnumber = true
+                        noddd = false
+                    }else{
+                        label.text = "error"
+                    }
+                } catch {
+                    print(error.localizedDescription)
+                }
+                
+            
             }
         }
 
