@@ -12,7 +12,6 @@ class CalculatorViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     var number:Int = 0
@@ -21,23 +20,29 @@ class CalculatorViewController: UIViewController {
     var first = 0
     var operation = ""
     var noddd = true
+    var isitfirstnumber = true
     @IBAction func buttton(_ sender: UIButton) {
+        print(noddd)
         if(noddd == true){
         label.text = ""
-        label.text = label.text! + String(sender.tag)
-         number = Int(label.text!)!
-        operation = operation + String(number)
+        label.text = "" + String(sender.tag)
+        operation = operation + String(sender.tag)
         print(operation)
         label.text = operation
         }else{
-            operation = ""
-            label.text = "" + String(sender.tag)
-            number = Int(label.text!)!
-            print("ok2")
-            operation = operation + String(number)
-            print("ok3")
-            label.text = operation
-            noddd = true
+            if(isitfirstnumber == true){
+                operation = String(sender.tag)
+                label.text = operation
+                noddd = true
+            }else{
+                label.text = ""
+                label.text = "" + String(sender.tag)
+                operation = operation + String(sender.tag)
+                print(operation)
+                label.text = operation
+              noddd = true
+            }
+            
         }
     }
     
@@ -53,13 +58,13 @@ class CalculatorViewController: UIViewController {
                 print("error")
                 }else{
                 operation = operation + "+"
+                    isitfirstnumber = false
                 label.text = operation
                 }
             }
         }else if (sender.titleLabel?.text == "-"){
             if(empty == false){
-                first = Int(number)
-                
+                isitfirstnumber = false
                 operation = operation + "-"
                 label.text = operation
             }
@@ -70,6 +75,7 @@ class CalculatorViewController: UIViewController {
                 if(String(operation.last!) == "*" || String(operation.last!) == "/" || String(operation.last!) == "-" || String(operation.last!) == "+"){
                     print("error")
                 }else{
+                    isitfirstnumber = false
                 operation = operation + "*"
                 label.text = operation
                 }
@@ -82,6 +88,7 @@ class CalculatorViewController: UIViewController {
                 if(String(operation.last!) == "*" || String(operation.last!) == "/" || String(operation.last!) == "-" || String(operation.last!) == "+"){
                     print("error")
                 }else{
+                    isitfirstnumber = false
                 operation = operation + "/"
                 label.text = operation
                 }
@@ -94,36 +101,10 @@ class CalculatorViewController: UIViewController {
                 return
             }else{
             print(NSExpression(format:operation))
-            var hi = operation.replacingOccurrences(of: "+", with: ".0+")
-             hi = hi.replacingOccurrences(of: "-", with: ".0-")
-             hi = hi.replacingOccurrences(of: "/", with: ".0/")
-            hi = hi.replacingOccurrences(of: "*", with: ".0*")
-            hi = hi.replacingOccurrences(of: ".0.0", with: ".0")
-            hi = hi.replacingOccurrences(of: ".1.0", with: ".1")
-            hi = hi.replacingOccurrences(of: ".2.0", with: ".2")
-            hi = hi.replacingOccurrences(of: ".3.0", with: ".3")
-            hi = hi.replacingOccurrences(of: ".4.0", with: ".4")
-            hi = hi.replacingOccurrences(of: ".5.0", with: ".5")
-            hi = hi.replacingOccurrences(of: ".6.0", with: ".6")
-            hi = hi.replacingOccurrences(of: ".7.0", with: ".7")
-            hi = hi.replacingOccurrences(of: ".8.0", with: ".8")
-            hi = hi.replacingOccurrences(of: ".9.0", with: ".9")
-            hi = hi.replacingOccurrences(of: ".19.0", with: ".19")
-            hi = hi.replacingOccurrences(of: ".18.0", with: ".18")
-            hi = hi.replacingOccurrences(of: ".17.0", with: ".17")
-            hi = hi.replacingOccurrences(of: ".16.0", with: ".16")
-            hi = hi.replacingOccurrences(of: ".15.0", with: ".15")
-            hi = hi.replacingOccurrences(of: ".14.0", with: ".14")
-            hi = hi.replacingOccurrences(of: ".13.0", with: ".13")
-            hi = hi.replacingOccurrences(of: ".12.0", with: ".12")
-            hi = hi.replacingOccurrences(of: ".11.0", with: ".11")
-            hi = hi.replacingOccurrences(of: ".10.0", with: ".10")
-            print(hi)
-            let expn = NSExpression(format:hi)
-            var labe:Double = expn.expressionValue(with: nil, context: nil) as! Double
+                var labe:Double = operation.calculate()!
             label.text = String(describing: labe)
-            operation = ""
-            operation =  operation + String(labe.rounded(toPlaces: 1))
+            operation = String(labe.rounded(toPlaces: 1))
+                isitfirstnumber = true
             noddd = false
             }
         }
@@ -139,6 +120,8 @@ class CalculatorViewController: UIViewController {
     @IBAction func ac(_ sender: Any) {
         operation = ""
         label.text = ""
+        noddd = true
+        isitfirstnumber = true
     }
     
     /*
@@ -152,6 +135,46 @@ class CalculatorViewController: UIViewController {
     */
 
 }
+extension String {
+    
+    private func allNumsToDouble() -> String {
+        
+        let symbolsCharSet = ".,"
+        let fullCharSet = "0123456789" + symbolsCharSet
+        var i = 0
+        var result = ""
+        var chars = Array(self)
+        while i < chars.count {
+            if fullCharSet.contains(chars[i]) {
+                var numString = String(chars[i])
+                i += 1
+                loop: while i < chars.count {
+                    if fullCharSet.contains(chars[i]) {
+                        numString += String(chars[i])
+                        i += 1
+                    } else {
+                        break loop
+                    }
+                }
+                if let num = Double(numString) {
+                    result += "\(num)"
+                } else {
+                    result += numString
+                }
+            } else {
+                result += String(chars[i])
+                i += 1
+            }
+        }
+        return result
+    }
+    
+    func calculate() -> Double? {
+        let transformedString = allNumsToDouble()
+        let expr = NSExpression(format: transformedString)
+        return expr.expressionValue(with: nil, context: nil) as? Double
+    }
+}
 extension Double {
     /// Rounds the double to decimal places value
     func rounded(toPlaces places:Int) -> Double {
@@ -159,3 +182,5 @@ extension Double {
         return (self * divisor).rounded() / divisor
     }
 }
+
+
