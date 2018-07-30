@@ -23,7 +23,7 @@ class secondary: UITableViewController {
         6:
             [],
         -1:
-            [notes(title: "Chapter 1", icon: "chapter1logo.png"),notes(title: "Chapter 2", icon: "chapter2logo.png"),notes(title: "Chapter 3", icon: "chapter3logo.png"),notes(title: "Chapter 4", icon: "chapter4logo.png")],
+            [notes(title: "Prime Numbers, Highest Common Factor, Lowest Common Multiple", icon: "chapter1logo.png"),notes(title: "Chapter 2", icon: "chapter2logo.png"),notes(title: "Chapter 3", icon: "chapter3logo.png"),notes(title: "Chapter 4", icon: "chapter4logo.png")],
         -2:
             [],
         -3:
@@ -59,17 +59,17 @@ self.tableView.rowHeight = 89
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         self.tableView.rowHeight = 89
-        return (secondarynotes[1]?.count)!
+        return (secondarynotes[-1]?.count)!
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell1", for: indexPath)
         self.tableView.rowHeight = 89
         let titlelbl = cell.viewWithTag(1) as! UILabel
         let uiimage = cell.viewWithTag(2) as! UIImageView
         titlelbl.text = secondarynotes[-1]![indexPath.row].title
-        uiimage.image = UIImage(named:secondarynotes[1]![indexPath.row].icon)
+        uiimage.image = UIImage(named:secondarynotes[-1]![indexPath.row].icon)
         // Configure the cell...
 
         return cell
@@ -101,8 +101,22 @@ self.tableView.rowHeight = 89
 
     }
     */
-
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let url = Bundle.main.url(forResource: "S1 Unit 1_ Prime Numbers, Highest Common Factor, Lowest Common Multiple", withExtension: "pdf") {
+            let webView = UIWebView(frame: self.view.frame)
+            let urlRequest = URLRequest(url: url)
+            webView.loadRequest(urlRequest as URLRequest)
+            
+            let pdfVC = UIViewController()
+            pdfVC.view.addSubview(webView)
+            pdfVC.title = "S1 Unit 1_ Prime Numbers, Highest Common Factor, Lowest Common Multiple"
+            self.navigationController?.pushViewController(pdfVC, animated: true)
+            
+            
+        }
+    }
     /*
+     
     // Override to support conditional rearranging of the table view.
     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the item to be re-orderable.

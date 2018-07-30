@@ -40,6 +40,8 @@
 		AFF7B2002105BFEF0026D20B /* MainPageStuff.png in Resources */ = {isa = PBXBuildFile; fileRef = AFF7B1FF2105BFEE0026D20B /* MainPageStuff.png */; };
 		AFF7B2022105C0C40026D20B /* Not main page.png in Resources */ = {isa = PBXBuildFile; fileRef = AFF7B2012105C0C30026D20B /* Not main page.png */; };
 		AFF7B2042105C2190026D20B /* Screen Shot 2018-07-23 at 3.57.59 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = AFF7B2032105C2180026D20B /* Screen Shot 2018-07-23 at 3.57.59 PM.png */; };
+		FEDB85F3210F054400585639 /* pdfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDB85F2210F054400585639 /* pdfViewController.swift */; };
+		FEDB85F5210F080300585639 /* S1 Unit 1_ Prime Numbers, Highest Common Factor, Lowest Common Multiple.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FEDB85F4210F080300585639 /* S1 Unit 1_ Prime Numbers, Highest Common Factor, Lowest Common Multiple.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +82,8 @@
 		AFF7B1FF2105BFEE0026D20B /* MainPageStuff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainPageStuff.png; sourceTree = "<group>"; };
 		AFF7B2012105C0C30026D20B /* Not main page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Not main page.png"; sourceTree = "<group>"; };
 		AFF7B2032105C2180026D20B /* Screen Shot 2018-07-23 at 3.57.59 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2018-07-23 at 3.57.59 PM.png"; sourceTree = "<group>"; };
+		FEDB85F2210F054400585639 /* pdfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = pdfViewController.swift; path = ../../pdfViewController.swift; sourceTree = "<group>"; };
+		FEDB85F4210F080300585639 /* S1 Unit 1_ Prime Numbers, Highest Common Factor, Lowest Common Multiple.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "S1 Unit 1_ Prime Numbers, Highest Common Factor, Lowest Common Multiple.pdf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,7 @@
 				AFA58A2A2043E84200A227B9 /* AppDelegate.swift */,
 				AFA58A2C2043E84200A227B9 /* ViewController.swift */,
 				AFA58A2E2043E84200A227B9 /* Main.storyboard */,
+				FEDB85F2210F054400585639 /* pdfViewController.swift */,
 				AFD18C3A20FC7FB90097D158 /* secondary.swift */,
 				AFD6CABC204D2EC4004D931E /* NotesViewController.swift */,
 				AFA58A672043FD0C00A227B9 /* secondaryTableViewController.swift */,
@@ -146,6 +151,7 @@
 		AFA58A3E2043EAA900A227B9 /* Photos */ = {
 			isa = PBXGroup;
 			children = (
+				FEDB85F4210F080300585639 /* S1 Unit 1_ Prime Numbers, Highest Common Factor, Lowest Common Multiple.pdf */,
 				AFD18C3E20FC84A00097D158 /* logos */,
 				AF3CF93420E0D37100082AA3 /* download.png */,
 				AF8B79B7208483E5003EC1E5 /* 10314-white-square-button.png */,
@@ -252,6 +258,7 @@
 				AFD18C4020FC87480097D158 /* chapter1logo.png in Resources */,
 				AF47CEA02072261D00949253 /* OrionLogoWhite.png in Resources */,
 				AF3CF93520E0D37200082AA3 /* download.png in Resources */,
+				FEDB85F5210F080300585639 /* S1 Unit 1_ Prime Numbers, Highest Common Factor, Lowest Common Multiple.pdf in Resources */,
 				AFF7B2042105C2190026D20B /* Screen Shot 2018-07-23 at 3.57.59 PM.png in Resources */,
 				AF8B79BA2084900B003EC1E5 /* Screen Shot 2018-04-16 at 4.01.50 PM.png in Resources */,
 				AFA58A352043E84200A227B9 /* LaunchScreen.storyboard in Resources */,
@@ -336,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFA58A682043FD0C00A227B9 /* secondaryTableViewController.swift in Sources */,
+				FEDB85F3210F054400585639 /* pdfViewController.swift in Sources */,
 				AFD6CABD204D2EC4004D931E /* NotesViewController.swift in Sources */,
 				AFD18C3B20FC7FB90097D158 /* secondary.swift in Sources */,
 				AFA58A2D2043E84200A227B9 /* ViewController.swift in Sources */,

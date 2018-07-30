@@ -71,18 +71,54 @@ class CalculatorViewController: UIViewController {
                 label.text = operation
             }
             }
-        }else if (sender.titleLabel?.text == "x"){
+        }else if (sender.titleLabel?.text == "("){
             if(empty == false){
                  if(operation !=  ""){
-                if(String(operation.last!) == "*" || String(operation.last!) == "/" || String(operation.last!) == "-" || String(operation.last!) == "+"){
+                if(String(operation.last!) != "*" || String(operation.last!) != "/" || String(operation.last!) != "-" || String(operation.last!) == "+"){
                     print("error")
                 }else{
-                    isitfirstnumber = false
+                isitfirstnumber = false
                 operation = operation + "*"
                 label.text = operation
                 }
             }
             }
+        }else if (sender.titleLabel?.text == ")"){
+            if(empty == false){
+                if(operation !=  ""){
+                    if(String(operation.last!) == "*" || String(operation.last!) == "/" || String(operation.last!) == "-" || String(operation.last!) == "+"){
+                        print("error")
+                    }else{
+                        isitfirstnumber = false
+                        operation = operation + "*"
+                        label.text = operation
+                    }
+                }
+            }
+        }else if (sender.titleLabel?.text == "."){
+            if(empty == false){
+                if(operation !=  ""){
+                    if(Int(String(operation.last!)) == nil || String(operation.last!) == "/" || String(operation.last!) == "-" || String(operation.last!) == "+" || noddd == false){
+                        print("error")
+                    }else{
+                        isitfirstnumber = false
+                        operation = operation + "."
+                        label.text = operation
+                    }
+                }
+            }
+        }else if (sender.titleLabel?.text == "x"){
+                if(empty == false){
+                    if(operation !=  ""){
+                        if(String(operation.last!) == "*" || String(operation.last!) == "/" || String(operation.last!) == "-" || String(operation.last!) == "+"){
+                            print("error")
+                        }else{
+                            isitfirstnumber = false
+                            operation = operation + "*"
+                            label.text = operation
+                        }
+                    }
+                }
         }else if (sender.titleLabel?.text == "÷"){
             if(empty == false){
                  if(operation !=  ""){
