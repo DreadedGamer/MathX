@@ -441,7 +441,7 @@
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="LgM-Nx-DNg" kind="show" id="GlD-rK-FgT"/>
+                                    <segue destination="LgM-Nx-DNg" kind="show" id="aQ7-3M-vAh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1208,9 +1208,14 @@
                                     <outlet property="delegate" destination="LgM-Nx-DNg" id="FCx-Ci-fEB"/>
                                 </connections>
                             </textField>
-                            <textView clipsSubviews="YES" contentMode="scaleToFill" editable="NO" text="As well as regular operators like +, *, -, try using functions such as pow(), sqrt() and sin(). Most common ones are supported." translatesAutoresizingMaskIntoConstraints="NO" id="34x-EW-iql">
+                            <textView clipsSubviews="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34x-EW-iql">
                                 <rect key="frame" x="16" y="78" width="288" height="470"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">List of operators suported:
+As well as regular operators like +, *, -, and functions like sqrt(x),floor(x),ceil(x),round(x),cos(x),acos(x),sin(x),asin(x),tan(x),atan(x),abs(x),pow(x,y)
+atan2(x,y)
+mod(x,y)
+Use ans for to use previous equation answere</string>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name=".SFNSDisplay-Regular" family=".SF NS Display" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1230,7 +1235,6 @@
                     </view>
                     <connections>
                         <outlet property="inputField" destination="0MD-zD-wj5" id="RgJ-if-kRU"/>
-                        <outlet property="outputView" destination="34x-EW-iql" id="fTe-R4-gL2"/>
                         <outlet property="outputview" destination="34x-EW-iql" id="KNZ-gn-VBd"/>
                     </connections>
                 </viewController>

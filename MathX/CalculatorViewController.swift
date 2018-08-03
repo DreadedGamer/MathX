@@ -85,12 +85,10 @@ class CalculatorViewController: UIViewController {
             }else if (sender.titleLabel?.text == "("){
                     if(operation != ""){
                         if(Int(String(operation.last!)) == nil){
-                            print("hah")
                         isitfirstnumber = false
                         operation = operation + "("
                         label.text = operation
                         }else{
-                            print("no")
                             isitfirstnumber = false
                             operation = operation + "*("
                             label.text = operation
