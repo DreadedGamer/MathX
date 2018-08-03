@@ -77,7 +77,7 @@
 		AFD18C3A20FC7FB90097D158 /* secondary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondary.swift; sourceTree = "<group>"; };
 		AFD18C3F20FC87480097D158 /* chapter1logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chapter1logo.png; sourceTree = "<group>"; };
 		AFD6CABC204D2EC4004D931E /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
-		AFD6CABE204D3742004D931E /* gradient_series___orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gradient_series___orange.png"; sourceTree = "<group>"; };
+		AFD6CABE204D3742004D931E /* gradient_series___orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gradient_series___orange.png; sourceTree = "<group>"; };
 		AFD6CAC0204D3B4D004D931E /* File.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = File.rtf; sourceTree = "<group>"; };
 		AFF7B1FF2105BFEE0026D20B /* MainPageStuff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainPageStuff.png; sourceTree = "<group>"; };
 		AFF7B2012105C0C30026D20B /* Not main page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Not main page.png"; sourceTree = "<group>"; };
@@ -309,11 +309,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MathX/Pods-MathX-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/paper-onboarding/paper_onboarding.framework",
+				"${BUILT_PRODUCTS_DIR}/Expression/Expression.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/paper_onboarding.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Expression.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

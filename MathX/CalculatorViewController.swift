@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Expression
 class CalculatorViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -22,6 +22,8 @@ class CalculatorViewController: UIViewController {
     var noddd = true
     var isitfirstnumber = true
     @IBAction func buttton(_ sender: UIButton) {
+        label.textColor = UIColor.white
+        label.adjustsFontSizeToFitWidth = true
         print(noddd)
         if(noddd == true){
         label.text = ""
@@ -71,30 +73,6 @@ class CalculatorViewController: UIViewController {
                 label.text = operation
             }
             }
-        }else if (sender.titleLabel?.text == "("){
-            if(empty == false){
-                 if(operation !=  ""){
-                if(String(operation.last!) != "*" || String(operation.last!) != "/" || String(operation.last!) != "-" || String(operation.last!) == "+"){
-                    print("error")
-                }else{
-                isitfirstnumber = false
-                operation = operation + "*"
-                label.text = operation
-                }
-            }
-            }
-        }else if (sender.titleLabel?.text == ")"){
-            if(empty == false){
-                if(operation !=  ""){
-                    if(String(operation.last!) == "*" || String(operation.last!) == "/" || String(operation.last!) == "-" || String(operation.last!) == "+"){
-                        print("error")
-                    }else{
-                        isitfirstnumber = false
-                        operation = operation + "*"
-                        label.text = operation
-                    }
-                }
-            }
         }else if (sender.titleLabel?.text == "."){
             if(empty == false){
                 if(operation !=  ""){
@@ -134,25 +112,25 @@ class CalculatorViewController: UIViewController {
             }
             
         }else if (sender.titleLabel?.text == "="){
+            
             if(operation.replacingOccurrences(of: "+", with: "") == "" || operation.replacingOccurrences(of: "-", with: "") == "" || operation.replacingOccurrences(of: "/", with: "") == "" || operation.replacingOccurrences(of: "*", with: "") == "" ){
                 print("error,user stupid")
                 return
             }else{
-                do {
-                    print(NSExpression(format:operation))
-                    if var labe:Double = operation.calculate()! {
-                        label.text = String(describing: labe)
-                        operation = String(labe.rounded(toPlaces: 1))
+                operation = operation.replacingOccurrences(of: ")(", with: ")*(")
+                print(operation)
+                do{
+                let result = try Expression(operation).evaluate()
+                        label.text = String(describing: result)
+                        operation = String(result.rounded(toPlaces: 1))
                         isitfirstnumber = true
                         noddd = false
-                    }else{
-                        label.text = "error"
-                    }
-                } catch {
-                    print(error.localizedDescription)
-                }
                 
-            
+                }catch{
+                    label.textColor = UIColor.red
+                    label.adjustsFontSizeToFitWidth = true
+                    label.text = "\(error)"
+                }
             }
         }
 

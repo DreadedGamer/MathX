@@ -106,6 +106,7 @@ self.tableView.rowHeight = 89
             let webView = UIWebView(frame: self.view.frame)
             let urlRequest = URLRequest(url: url)
             webView.loadRequest(urlRequest as URLRequest)
+            webView.scalesPageToFit = true
             
             let pdfVC = UIViewController()
             pdfVC.view.addSubview(webView)
