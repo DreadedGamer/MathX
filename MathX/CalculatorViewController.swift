@@ -12,8 +12,10 @@ class CalculatorViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        past_equation.adjustsFontSizeToFitWidth = true
         // Do any additional setup after loading the view.
     }
+    @IBOutlet var past_equation: UILabel!
     var number:Int = 0
     @IBOutlet weak var label: UILabel!
     var empty = true
@@ -21,7 +23,9 @@ class CalculatorViewController: UIViewController {
     var operation = ""
     var noddd = true
     var isitfirstnumber = true
+    var answerevalue = 0.0
     @IBAction func buttton(_ sender: UIButton) {
+        if(operation.count < 30){
         label.textColor = UIColor.white
         label.adjustsFontSizeToFitWidth = true
         print(noddd)
@@ -37,8 +41,6 @@ class CalculatorViewController: UIViewController {
                 label.text = operation
                 noddd = true
             }else{
-                label.text = ""
-                label.text = "" + (sender.titleLabel?.text)!
                 operation = operation + (sender.titleLabel?.text)!
                 print(operation)
                 label.text = operation
@@ -46,33 +48,59 @@ class CalculatorViewController: UIViewController {
             }
             
         }
+        }
     }
     
     @IBAction func operations(_ sender: UIButton) {
-        
+        if(operation.count < 30){
         if(label.text != ""){
            empty = false
         }
+            label.textColor = UIColor.white
+            label.adjustsFontSizeToFitWidth = true
         if(sender.titleLabel?.text == "+"){
             if(empty == false){
                 if(operation !=  ""){
                 if(String(operation.last!) == "x" || String(operation.last!) == "÷"){
                 print("error")
                 }else{
+                    if(operation !=  ""){
+                    if(String(operation.last!) != "+"){
                 operation = operation + "+"
+                    }
                     isitfirstnumber = false
+                    
                 label.text = operation
-                }
+                    }
             }
+                }
             }
         }else if (sender.titleLabel?.text == "-"){
             if(empty == false){
-                 if(operation !=  ""){
+                
                 isitfirstnumber = false
                 operation = operation + "-"
                 label.text = operation
             }
+            }else if (sender.titleLabel?.text == "("){
+                    if(operation != ""){
+                        if(Int(String(operation.last!)) == nil){
+                            print("hah")
+                        isitfirstnumber = false
+                        operation = operation + "("
+                        label.text = operation
+                        }else{
+                            print("no")
+                            isitfirstnumber = false
+                            operation = operation + "*("
+                            label.text = operation
+                        }
+                }else{
+                        isitfirstnumber = false
+                        operation = operation + "("
+                        label.text = operation
             }
+            
         }else if (sender.titleLabel?.text == "."){
             if(empty == false){
                 if(operation !=  ""){
@@ -101,7 +129,7 @@ class CalculatorViewController: UIViewController {
             if(empty == false){
                  if(operation !=  ""){
                 print(operation.last!)
-                if(String(operation.last!) == "*" || String(operation.last!) == "/" || String(operation.last!) == "-" || String(operation.last!) == "+"){
+                if(String(operation.last!) == "*" || String(operation.last!) == "/" || String(operation.last!) == "-"){
                     print("error")
                 }else{
                     isitfirstnumber = false
@@ -111,18 +139,46 @@ class CalculatorViewController: UIViewController {
             }
             }
             
-        }else if (sender.titleLabel?.text == "="){
+        }else if (sender.titleLabel?.text == "=" || sender.titleLabel?.text == "√"){
             
-            if(operation.replacingOccurrences(of: "+", with: "") == "" || operation.replacingOccurrences(of: "-", with: "") == "" || operation.replacingOccurrences(of: "/", with: "") == "" || operation.replacingOccurrences(of: "*", with: "") == "" ){
+            outer : if(operation.replacingOccurrences(of: "+", with: "") == "" || operation.replacingOccurrences(of: "-", with: "") == "" || operation.replacingOccurrences(of: "/", with: "") == "" || operation.replacingOccurrences(of: "*", with: "") == "" ){
                 print("error,user stupid")
                 return
             }else{
                 operation = operation.replacingOccurrences(of: ")(", with: ")*(")
+                operation = operation.replacingOccurrences(of: "--", with: "+")
+                var st1ring = "+"
+                var initial = operation.count
+                for y in 1 ... operation.count{
+                    print(y)
+                    st1ring = "+"
+                    for x in 1 ... (initial-y+1){
+                        st1ring = st1ring + "+"
+                    }
+                    print(st1ring)
+                    operation = operation.replacingOccurrences(of: st1ring, with: "+")
+                }
+                operation = operation.replacingOccurrences(of: "+-", with: "-")
+                operation = operation.replacingOccurrences(of: "-+", with: "-")
+                operation = operation.replacingOccurrences(of: "Ans", with: String(answerevalue))
+                if(sender.titleLabel?.text == "√"){
+                    operation = "sqrt(" + operation + ")"
+                }
+                
                 print(operation)
                 do{
                 let result = try Expression(operation).evaluate()
+                    if(result.isInfinite || result.isNaN){
+                        label.textColor = UIColor.red
+                        label.adjustsFontSizeToFitWidth = true
                         label.text = String(describing: result)
-                        operation = String(result.rounded(toPlaces: 1))
+                        noddd = false
+                        break outer
+                    }
+                    past_equation.text = operation + " = " + String(describing: result)
+                        label.text = String(describing: result)
+                    answerevalue = result
+                        operation = "Ans"
                         isitfirstnumber = true
                         noddd = false
                 
@@ -135,7 +191,23 @@ class CalculatorViewController: UIViewController {
         }
 
         print(operation)
-        
+        }
+    }
+    
+    @IBOutlet var deletebutton: UIButton!
+    @IBAction func editdelete(_ sender: Any) {
+        if(operation != "" && operation != "Ans"){
+            if(noddd == false){
+                label.textColor = UIColor.white
+                label.adjustsFontSizeToFitWidth = true
+                operation = String(operation.dropLast())
+                label.text = operation
+                noddd = true
+            }else{
+            operation = String(operation.dropLast())
+            label.text = operation
+            }
+        }
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -147,6 +219,8 @@ class CalculatorViewController: UIViewController {
         label.text = ""
         noddd = true
         isitfirstnumber = true
+        answerevalue = 0
+        past_equation.text = ""
     }
     
     /*
