@@ -10,25 +10,14 @@ import UIKit
 
 class secondary: UITableViewController {
     var secondarynotes : [Int:[notes]] = [
+        
         1:
-            [],
+            [notes(title: "Prime Numbers, Highest Common Factor, Lowest Common Multiple", icon: "chapter1logo.png"),notes(title: "Chapter 2", icon: "chapter2logo.png"),notes(title: "Chapter 3", icon: "chapter3logo.png"),notes(title: "Chapter 4", icon: "chapter4logo.png")],
         2:
             [],
         3:
             [],
         4:
-            [],
-        5:
-            [],
-        6:
-            [],
-        -1:
-            [notes(title: "Prime Numbers, Highest Common Factor, Lowest Common Multiple", icon: "chapter1logo.png"),notes(title: "Chapter 2", icon: "chapter2logo.png"),notes(title: "Chapter 3", icon: "chapter3logo.png"),notes(title: "Chapter 4", icon: "chapter4logo.png")],
-        -2:
-            [],
-        -3:
-            [],
-        -4:
             [],
     ]
     override func viewDidLoad() {
@@ -68,8 +57,8 @@ self.tableView.rowHeight = 89
         self.tableView.rowHeight = 89
         let titlelbl = cell.viewWithTag(1) as! UILabel
         let uiimage = cell.viewWithTag(2) as! UIImageView
-        titlelbl.text = secondarynotes[-1]![indexPath.row].title
-        uiimage.image = UIImage(named:secondarynotes[-1]![indexPath.row].icon)
+        titlelbl.text = secondarynotes[1]![indexPath.row].title
+        uiimage.image = UIImage(named:secondarynotes[1]![indexPath.row].icon)
         // Configure the cell...
 
         return cell

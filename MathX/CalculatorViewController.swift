@@ -13,8 +13,10 @@ class CalculatorViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         past_equation.adjustsFontSizeToFitWidth = true
+         self.navigationController?.setNavigationBarHidden(true, animated: false)
         // Do any additional setup after loading the view.
     }
+    
     @IBOutlet var past_equation: UILabel!
     var number:Int = 0
     @IBOutlet weak var label: UILabel!
@@ -158,7 +160,7 @@ class CalculatorViewController: UIViewController {
                 }
                 operation = operation.replacingOccurrences(of: "+-", with: "-")
                 operation = operation.replacingOccurrences(of: "-+", with: "-")
-                operation = operation.replacingOccurrences(of: "Ans", with: String(answerevalue))
+                operation = operation.replacingOccurrences(of: "Ans", with: "(" + String(answerevalue) + ")")
                 if(sender.titleLabel?.text == "√"){
                     operation = "sqrt(" + operation + ")"
                 }
@@ -220,7 +222,12 @@ class CalculatorViewController: UIViewController {
         answerevalue = 0
         past_equation.text = ""
     }
-    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        // Show the navigation bar on other view controllers
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
     /*
     // MARK: - Navigation
 
@@ -271,6 +278,8 @@ extension String {
         let expr = NSExpression(format: transformedString)
         return expr.expressionValue(with: nil, context: nil) as? Double
     }
+    
+    
 }
 extension Double {
     /// Rounds the double to decimal places value
