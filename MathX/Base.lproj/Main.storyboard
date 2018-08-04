@@ -1087,14 +1087,8 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="88.666666666666671"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="guN-YT-Onh">
-                                            <rect key="frame" x="324" y="2" width="70" height="73"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="70" id="fwM-jM-ch5"/>
-                                            </constraints>
-                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Bk-pA-Mfn">
-                                            <rect key="frame" x="20" y="11" width="296" height="62"/>
+                                            <rect key="frame" x="19.999999999999996" y="11" width="41.666666666666657" height="62"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -1103,11 +1097,7 @@
                                     <constraints>
                                         <constraint firstItem="0Bk-pA-Mfn" firstAttribute="leading" secondItem="4da-Ng-MJq" secondAttribute="leadingMargin" id="E7U-LG-99p"/>
                                         <constraint firstItem="0Bk-pA-Mfn" firstAttribute="top" secondItem="4da-Ng-MJq" secondAttribute="topMargin" id="L1h-3R-Kk3"/>
-                                        <constraint firstItem="guN-YT-Onh" firstAttribute="trailing" secondItem="4da-Ng-MJq" secondAttribute="trailingMargin" id="R4k-Vs-R9d"/>
-                                        <constraint firstItem="guN-YT-Onh" firstAttribute="leading" secondItem="0Bk-pA-Mfn" secondAttribute="trailing" constant="8" symbolic="YES" id="VyY-4S-mGX"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="0Bk-pA-Mfn" secondAttribute="bottom" constant="5" id="X9G-fM-deJ"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="guN-YT-Onh" secondAttribute="bottom" constant="3" id="cea-pF-27h"/>
-                                        <constraint firstItem="guN-YT-Onh" firstAttribute="top" secondItem="4da-Ng-MJq" secondAttribute="topMargin" constant="-9" id="ruo-0A-RVT"/>
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -1171,25 +1161,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmd-vz-kWB">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmd-vz-kWB">
                                 <rect key="frame" x="0.0" y="116" width="414" height="143"/>
                                 <connections>
                                     <action selector="Buttonpressed:" destination="bf6-gI-82z" eventType="touchUpInside" id="LDK-lB-6F6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8HV-CR-mWO">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8HV-CR-mWO">
                                 <rect key="frame" x="0.0" y="258.66666666666669" width="414" height="143"/>
                                 <connections>
                                     <action selector="Buttonpressed:" destination="bf6-gI-82z" eventType="touchUpInside" id="JhS-pJ-ucm"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbe-r1-H90">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbe-r1-H90">
                                 <rect key="frame" x="0.0" y="401.33333333333331" width="414" height="142.99999999999994"/>
                                 <connections>
                                     <action selector="Buttonpressed:" destination="bf6-gI-82z" eventType="touchUpInside" id="zLf-xh-gcV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSI-cJ-Ka6">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSI-cJ-Ka6">
                                 <rect key="frame" x="0.0" y="544" width="414" height="143.33333333333337"/>
                                 <connections>
                                     <action selector="Buttonpressed:" destination="bf6-gI-82z" eventType="touchUpInside" id="oUg-U0-BBH"/>
@@ -1239,7 +1229,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Level" id="351-OY-ngo"/>
                     <connections>
-                        <segue destination="9nL-as-HIZ" kind="show" id="jmK-Gp-hsL"/>
+                        <segue destination="9nL-as-HIZ" kind="show" identifier="hi" id="jmK-Gp-hsL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qfl-GB-FnK" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -17,7 +17,8 @@ class levelselectionViewController: UIViewController {
     }
 
     @IBAction func Buttonpressed(_ sender: UIButton) {
-        sender.tag
+        
+        self.performSegue(withIdentifier: "hi", sender: nil)
     }
     
     override func didReceiveMemoryWarning() {

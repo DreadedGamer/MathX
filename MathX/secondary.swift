@@ -48,7 +48,7 @@ self.tableView.rowHeight = 89
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         self.tableView.rowHeight = 89
-        return (secondarynotes[-1]?.count)!
+        return (secondarynotes[1]?.count)!
     }
 
     
@@ -56,9 +56,7 @@ self.tableView.rowHeight = 89
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell1", for: indexPath)
         self.tableView.rowHeight = 89
         let titlelbl = cell.viewWithTag(1) as! UILabel
-        let uiimage = cell.viewWithTag(2) as! UIImageView
         titlelbl.text = secondarynotes[1]![indexPath.row].title
-        uiimage.image = UIImage(named:secondarynotes[1]![indexPath.row].icon)
         // Configure the cell...
 
         return cell
