@@ -17,7 +17,7 @@ class levelselectionViewController: UIViewController {
     }
 
     @IBAction func Buttonpressed(_ sender: UIButton) {
-        
+        UserDefaults.standard.set(sender.tag, forKey: "index")
         self.performSegue(withIdentifier: "hi", sender: nil)
     }
     

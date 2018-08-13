@@ -146,6 +146,8 @@ class CalculatorViewController: UIViewController {
                 return
             }else{
                 operation = operation.replacingOccurrences(of: ")(", with: ")*(")
+                operation = operation.replacingOccurrences(of: "+-", with: "-")
+                operation = operation.replacingOccurrences(of: "-+", with: "-")
                 operation = operation.replacingOccurrences(of: "--", with: "+")
                 var st1ring = "+"
                 var initial = operation.count
@@ -175,8 +177,9 @@ class CalculatorViewController: UIViewController {
                         noddd = false
                         break outer
                     }
-                    past_equation.text = operation + " = " + String(describing: result)
-                        label.text = String(describing: result)
+                    
+                    past_equation.text = operation.replacingOccurrences(of: ".0", with: "") + " = " + String(describing: result).replacingOccurrences(of: ".0", with: "")
+                        label.text = String(describing: result).replacingOccurrences(of: ".0", with: "")
                     answerevalue = result
                         operation = "Ans"
                         isitfirstnumber = true
@@ -207,6 +210,9 @@ class CalculatorViewController: UIViewController {
             operation = String(operation.dropLast())
             label.text = operation
             }
+        }else if(operation == "Ans"){
+            operation = ""
+            label.text = operation
         }
     }
     override func didReceiveMemoryWarning() {

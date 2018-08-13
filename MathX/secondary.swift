@@ -20,9 +20,12 @@ class secondary: UITableViewController {
         4:
             [],
     ]
+    var index = UserDefaults.standard.integer(forKey: "index")
     override func viewDidLoad() {
         super.viewDidLoad()
 self.tableView.rowHeight = 89
+        var string : [String] = ["Secondary 1", "Secondary 2","Secondary 3","Secondary 4"]
+        self.title = string[index-1]
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -48,7 +51,7 @@ self.tableView.rowHeight = 89
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         self.tableView.rowHeight = 89
-        return (secondarynotes[1]?.count)!
+        return (secondarynotes[index]?.count)!
     }
 
     
@@ -56,7 +59,8 @@ self.tableView.rowHeight = 89
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell1", for: indexPath)
         self.tableView.rowHeight = 89
         let titlelbl = cell.viewWithTag(1) as! UILabel
-        titlelbl.text = secondarynotes[1]![indexPath.row].title
+        titlelbl.adjustsFontSizeToFitWidth = true
+        titlelbl.text = secondarynotes[index]![indexPath.row].title
         // Configure the cell...
 
         return cell
@@ -92,9 +96,9 @@ self.tableView.rowHeight = 89
         if let url = Bundle.main.url(forResource: "S1 Unit 1_ Prime Numbers, Highest Common Factor, Lowest Common Multiple", withExtension: "pdf") {
             let webView = UIWebView(frame: self.view.frame)
             let urlRequest = URLRequest(url: url)
+            
             webView.loadRequest(urlRequest as URLRequest)
             webView.scalesPageToFit = true
-            
             let pdfVC = UIViewController()
             pdfVC.view.addSubview(webView)
             pdfVC.title = "S1 Unit 1_ Prime Numbers, Highest Common Factor, Lowest Common Multiple"
@@ -103,6 +107,7 @@ self.tableView.rowHeight = 89
             
         }
     }
+    
     /*
      
     // Override to support conditional rearranging of the table view.
