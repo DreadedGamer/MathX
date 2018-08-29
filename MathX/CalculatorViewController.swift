@@ -28,7 +28,7 @@ class CalculatorViewController: UIViewController {
     var answerevalue = 0.0
     @IBAction func buttton(_ sender: UIButton) {
         if(operation.count < 30){
-        label.textColor = UIColor.white
+        label.textColor = UIColor.black
         label.adjustsFontSizeToFitWidth = true
         print(noddd)
         if(noddd == true){
@@ -58,7 +58,7 @@ class CalculatorViewController: UIViewController {
         if(label.text != ""){
            empty = false
         }
-            label.textColor = UIColor.white
+            label.textColor = UIColor.black
             label.adjustsFontSizeToFitWidth = true
         if(sender.titleLabel?.text == "+"){
             if(empty == false){

@@ -26,6 +26,12 @@
 		AFA58A642043F0CA00A227B9 /* note copy.png in Resources */ = {isa = PBXBuildFile; fileRef = AFA58A612043F0CA00A227B9 /* note copy.png */; };
 		AFD18C3B20FC7FB90097D158 /* secondary.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD18C3A20FC7FB90097D158 /* secondary.swift */; };
 		AFD6CABD204D2EC4004D931E /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD6CABC204D2EC4004D931E /* NotesViewController.swift */; };
+		FE6AAEEE2136A185006FABE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6AAEED2136A185006FABE4 /* ViewController.swift */; };
+		FE6AAEF02136A18C006FABE4 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6AAEEF2136A18C006FABE4 /* ResultView.swift */; };
+		FE6AAEF22136A191006FABE4 /* String+Substring.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6AAEF12136A190006FABE4 /* String+Substring.swift */; };
+		FE6AAEF42136A195006FABE4 /* UIView+Fade.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6AAEF32136A195006FABE4 /* UIView+Fade.swift */; };
+		FE6AAEF72136A1B3006FABE4 /* Solving_Quadratic_Equations.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE6AAEF52136A1B2006FABE4 /* Solving_Quadratic_Equations.xcdatamodeld */; };
+		FE6AAEF92136A41D006FABE4 /* 5.0 in Resources */ = {isa = PBXBuildFile; fileRef = FE6AAEF82136A41D006FABE4 /* 5.0 */; };
 		FE70496B21147EEF00687FB0 /* Screen Shot 2018-08-03 at 8.13.13 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = FE70496A21147EEF00687FB0 /* Screen Shot 2018-08-03 at 8.13.13 PM.png */; };
 		FE70496D21148A4400687FB0 /* advancedcalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE70496C21148A4400687FB0 /* advancedcalculatorViewController.swift */; };
 		FE70497521153D9500687FB0 /* levelselectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE70497421153D9500687FB0 /* levelselectionViewController.swift */; };
@@ -34,7 +40,11 @@
 		FE7049832116FA3E00687FB0 /* mathematics-989124_960_720.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE70497F2116FA3E00687FB0 /* mathematics-989124_960_720.jpg */; };
 		FE7049842116FA3E00687FB0 /* math-1547018_960_720.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE7049802116FA3E00687FB0 /* math-1547018_960_720.jpg */; };
 		FE704986211C3C9800687FB0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE704985211C3C9800687FB0 /* DetailViewController.swift */; };
+		FE72393E212AF29D00CD791C /* resultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE72393D212AF29D00CD791C /* resultViewController.swift */; };
+		FED4A6A1212D2351000AD0B3 /* GamesWithAnimals.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FED4A6A0212D2351000AD0B3 /* GamesWithAnimals.pdf */; };
+		FED4A6A3212D45DF000AD0B3 /* AllToolViewContollers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED4A6A2212D45DF000AD0B3 /* AllToolViewContollers.swift */; };
 		FEDB85F5210F080300585639 /* S1 Unit 1_ Prime Numbers, Highest Common Factor, Lowest Common Multiple.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FEDB85F4210F080300585639 /* S1 Unit 1_ Prime Numbers, Highest Common Factor, Lowest Common Multiple.pdf */; };
+		FEFC6D4E21285881003DF6EC /* Screen Shot 2018-08-18 at 9.35.58 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = FEFC6D4D21285881003DF6EC /* Screen Shot 2018-08-18 at 9.35.58 PM.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +71,12 @@
 		AFA58A612043F0CA00A227B9 /* note copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "note copy.png"; sourceTree = "<group>"; };
 		AFD18C3A20FC7FB90097D158 /* secondary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondary.swift; sourceTree = "<group>"; };
 		AFD6CABC204D2EC4004D931E /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		FE6AAEED2136A185006FABE4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../../Solving-Quadratic-Equations-master/Solving Quadratic Equations/ViewController.swift"; sourceTree = "<group>"; };
+		FE6AAEEF2136A18C006FABE4 /* ResultView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultView.swift; path = "../../Solving-Quadratic-Equations-master/Solving Quadratic Equations/ResultView.swift"; sourceTree = "<group>"; };
+		FE6AAEF12136A190006FABE4 /* String+Substring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Substring.swift"; path = "../../Solving-Quadratic-Equations-master/Solving Quadratic Equations/String+Substring.swift"; sourceTree = "<group>"; };
+		FE6AAEF32136A195006FABE4 /* UIView+Fade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Fade.swift"; path = "../../Solving-Quadratic-Equations-master/Solving Quadratic Equations/UIView+Fade.swift"; sourceTree = "<group>"; };
+		FE6AAEF62136A1B2006FABE4 /* Solving_Quadratic_Equations.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Solving_Quadratic_Equations.xcdatamodel; sourceTree = "<group>"; };
+		FE6AAEF82136A41D006FABE4 /* 5.0 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = 5.0; path = "../../geogebra-math-apps-bundle-5-0-487-0/GeoGebra/HTML5/5.0"; sourceTree = "<group>"; };
 		FE70496A21147EEF00687FB0 /* Screen Shot 2018-08-03 at 8.13.13 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2018-08-03 at 8.13.13 PM.png"; sourceTree = "<group>"; };
 		FE70496C21148A4400687FB0 /* advancedcalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = advancedcalculatorViewController.swift; sourceTree = "<group>"; };
 		FE70497421153D9500687FB0 /* levelselectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = levelselectionViewController.swift; sourceTree = "<group>"; };
@@ -69,7 +85,11 @@
 		FE70497F2116FA3E00687FB0 /* mathematics-989124_960_720.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mathematics-989124_960_720.jpg"; sourceTree = "<group>"; };
 		FE7049802116FA3E00687FB0 /* math-1547018_960_720.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "math-1547018_960_720.jpg"; sourceTree = "<group>"; };
 		FE704985211C3C9800687FB0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		FE72393D212AF29D00CD791C /* resultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resultViewController.swift; sourceTree = "<group>"; };
+		FED4A6A0212D2351000AD0B3 /* GamesWithAnimals.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = GamesWithAnimals.pdf; sourceTree = "<group>"; };
+		FED4A6A2212D45DF000AD0B3 /* AllToolViewContollers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllToolViewContollers.swift; sourceTree = "<group>"; };
 		FEDB85F4210F080300585639 /* S1 Unit 1_ Prime Numbers, Highest Common Factor, Lowest Common Multiple.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "S1 Unit 1_ Prime Numbers, Highest Common Factor, Lowest Common Multiple.pdf"; sourceTree = "<group>"; };
+		FEFC6D4D21285881003DF6EC /* Screen Shot 2018-08-18 at 9.35.58 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2018-08-18 at 9.35.58 PM.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,9 +134,16 @@
 		AFA58A292043E84200A227B9 /* MathX */ = {
 			isa = PBXGroup;
 			children = (
+				FE6AAEF52136A1B2006FABE4 /* Solving_Quadratic_Equations.xcdatamodeld */,
+				FE6AAEED2136A185006FABE4 /* ViewController.swift */,
+				FE6AAEEF2136A18C006FABE4 /* ResultView.swift */,
+				FE6AAEF12136A190006FABE4 /* String+Substring.swift */,
+				FE6AAEF32136A195006FABE4 /* UIView+Fade.swift */,
 				FE70497421153D9500687FB0 /* levelselectionViewController.swift */,
 				AFA58A2A2043E84200A227B9 /* AppDelegate.swift */,
 				AFA58A2E2043E84200A227B9 /* Main.storyboard */,
+				FED4A6A2212D45DF000AD0B3 /* AllToolViewContollers.swift */,
+				FE72393D212AF29D00CD791C /* resultViewController.swift */,
 				FE70496C21148A4400687FB0 /* advancedcalculatorViewController.swift */,
 				AFD18C3A20FC7FB90097D158 /* secondary.swift */,
 				AFD6CABC204D2EC4004D931E /* NotesViewController.swift */,
@@ -126,6 +153,7 @@
 				AFA58A332043E84200A227B9 /* LaunchScreen.storyboard */,
 				AFA58A362043E84200A227B9 /* Info.plist */,
 				AF2763C020720F440070787B /* ethnocentric rg it.ttf */,
+				FE6AAEF82136A41D006FABE4 /* 5.0 */,
 				FE7049772116F9BF00687FB0 /* Pdfs */,
 				AFA58A3E2043EAA900A227B9 /* Photos */,
 			);
@@ -162,6 +190,7 @@
 		FE7049772116F9BF00687FB0 /* Pdfs */ = {
 			isa = PBXGroup;
 			children = (
+				FED4A6A0212D2351000AD0B3 /* GamesWithAnimals.pdf */,
 				FE70497B2116F9FA00687FB0 /* sec 4 */,
 				FE70497A2116F9F500687FB0 /* sec 3 */,
 				FE7049792116F9E400687FB0 /* sec 2 */,
@@ -202,6 +231,7 @@
 		FE70497C2116FA2600687FB0 /* SEC1-4PHOTOES */ = {
 			isa = PBXGroup;
 			children = (
+				FEFC6D4D21285881003DF6EC /* Screen Shot 2018-08-18 at 9.35.58 PM.png */,
 				FE70497E2116FA3E00687FB0 /* download.jpeg */,
 				FE7049802116FA3E00687FB0 /* math-1547018_960_720.jpg */,
 				FE70497F2116FA3E00687FB0 /* mathematics-989124_960_720.jpg */,
@@ -274,9 +304,11 @@
 			files = (
 				AFA58A3D2043EA8B00A227B9 /* Screen Shot 2018-01-12 at 8.46.23 AM.png in Resources */,
 				FE70496B21147EEF00687FB0 /* Screen Shot 2018-08-03 at 8.13.13 PM.png in Resources */,
+				FED4A6A1212D2351000AD0B3 /* GamesWithAnimals.pdf in Resources */,
 				AFA58A622043F0CA00A227B9 /* note copy 2.png in Resources */,
 				AF47CEA02072261D00949253 /* OrionLogoWhite.png in Resources */,
 				FEDB85F5210F080300585639 /* S1 Unit 1_ Prime Numbers, Highest Common Factor, Lowest Common Multiple.pdf in Resources */,
+				FEFC6D4E21285881003DF6EC /* Screen Shot 2018-08-18 at 9.35.58 PM.png in Resources */,
 				AFA58A352043E84200A227B9 /* LaunchScreen.storyboard in Resources */,
 				AFA58A322043E84200A227B9 /* Assets.xcassets in Resources */,
 				AFA58A632043F0CA00A227B9 /* note.png in Resources */,
@@ -287,6 +319,7 @@
 				AFA58A5C2043F0C200A227B9 /* cheatsheet copy.png in Resources */,
 				FE7049822116FA3E00687FB0 /* download.jpeg in Resources */,
 				AF2763C2207210460070787B /* ethnocentric rg it.ttf in Resources */,
+				FE6AAEF92136A41D006FABE4 /* 5.0 in Resources */,
 				AFA58A642043F0CA00A227B9 /* note copy.png in Resources */,
 				FE7049812116FA3E00687FB0 /* Pure-mathematics-formulæ-blackboard.jpg in Resources */,
 				FE7049832116FA3E00687FB0 /* mathematics-989124_960_720.jpg in Resources */,
@@ -356,13 +389,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE6AAEEE2136A185006FABE4 /* ViewController.swift in Sources */,
+				FE6AAEF72136A1B3006FABE4 /* Solving_Quadratic_Equations.xcdatamodeld in Sources */,
 				FE70497521153D9500687FB0 /* levelselectionViewController.swift in Sources */,
+				FE6AAEF02136A18C006FABE4 /* ResultView.swift in Sources */,
 				FE70496D21148A4400687FB0 /* advancedcalculatorViewController.swift in Sources */,
+				FE6AAEF22136A191006FABE4 /* String+Substring.swift in Sources */,
+				FED4A6A3212D45DF000AD0B3 /* AllToolViewContollers.swift in Sources */,
 				AFD6CABD204D2EC4004D931E /* NotesViewController.swift in Sources */,
+				FE72393E212AF29D00CD791C /* resultViewController.swift in Sources */,
 				AFD18C3B20FC7FB90097D158 /* secondary.swift in Sources */,
 				AFA58A2B2043E84200A227B9 /* AppDelegate.swift in Sources */,
 				AF8B79BC208495FB003EC1E5 /* CalculatorViewController.swift in Sources */,
 				FE704986211C3C9800687FB0 /* DetailViewController.swift in Sources */,
+				FE6AAEF42136A195006FABE4 /* UIView+Fade.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,6 +589,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FE6AAEF52136A1B2006FABE4 /* Solving_Quadratic_Equations.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FE6AAEF62136A1B2006FABE4 /* Solving_Quadratic_Equations.xcdatamodel */,
+			);
+			currentVersion = FE6AAEF62136A1B2006FABE4 /* Solving_Quadratic_Equations.xcdatamodel */;
+			name = Solving_Quadratic_Equations.xcdatamodeld;
+			path = "../../Solving-Quadratic-Equations-master/Solving Quadratic Equations/Solving_Quadratic_Equations.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AFA58A1F2043E84200A227B9 /* Project object */;
 }

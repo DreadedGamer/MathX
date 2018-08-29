@@ -14,16 +14,19 @@ class secondary: UITableViewController {
         1:
             [notes(title: "Prime Numbers, Highest Common Factor, Lowest Common Multiple", icon: "chapter1logo.png"),notes(title: "Chapter 2", icon: "chapter2logo.png"),notes(title: "Chapter 3", icon: "chapter3logo.png"),notes(title: "Chapter 4", icon: "chapter4logo.png")],
         2:
-            [],
+            [notes(title: "Algebraic Expressions and Formulae", icon: "chapter1logo.png"),notes(title: "Graphs of Quadratic Functions", icon: "chapter2logo.png"),notes(title: "Simultaneous Equations", icon: "chapter3logo.png"),notes(title: "Equations and Inequalities", icon: "chapter3logo.png"),notes(title: "Matrices", icon: "chapter4logo.png"),notes(title: "Equations and Inequalities", icon: "chapter3logo.png"),notes(title: "Congruency and Similarity", icon: "chapter4logo.png"),notes(title: "Ratio and proportion", icon: "chapter4logo.png"),notes(title: "Direct and Inverse Proportions", icon: "chapter4logo.png"),notes(title: "Pythagoras Theorem and Trigonometry", icon: "chapter4logo.png"),notes(title: "Set Language and Notation", icon: "chapter4logo.png"),notes(title: "Probability", icon: "chapter4logo.png")],
         3:
-            [],
+            [notes(title: "Prime Numbers, Highest Common Factor, Lowest Common Multiple", icon: "chapter1logo.png"),notes(title: "Chapter 2", icon: "chapter2logo.png"),notes(title: "Chapter 3", icon: "chapter3logo.png"),notes(title: "Chapter 4", icon: "chapter4logo.png")],
         4:
-            [],
+            [notes(title: "Prime Numbers, Highest Common Factor, Lowest Common Multiple", icon: "chapter1logo.png"),notes(title: "Chapter 2", icon: "chapter2logo.png"),notes(title: "Chapter 3", icon: "chapter3logo.png"),notes(title: "Chapter 4", icon: "chapter4logo.png")],
     ]
     var index = UserDefaults.standard.integer(forKey: "index")
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        navigationController?.navigationBar.prefersLargeTitles = true
 self.tableView.rowHeight = 89
+        self.navigationController?.navigationItem.largeTitleDisplayMode = .automatic
         var string : [String] = ["Secondary 1", "Secondary 2","Secondary 3","Secondary 4"]
         self.title = string[index-1]
         // Uncomment the following line to preserve selection between presentations
@@ -93,19 +96,7 @@ self.tableView.rowHeight = 89
     }
     */
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let url = Bundle.main.url(forResource: "S1 Unit 1_ Prime Numbers, Highest Common Factor, Lowest Common Multiple", withExtension: "pdf") {
-            let webView = UIWebView(frame: self.view.frame)
-            let urlRequest = URLRequest(url: url)
-            
-            webView.loadRequest(urlRequest as URLRequest)
-            webView.scalesPageToFit = true
-            let pdfVC = UIViewController()
-            pdfVC.view.addSubview(webView)
-            pdfVC.title = "S1 Unit 1_ Prime Numbers, Highest Common Factor, Lowest Common Multiple"
-            self.navigationController?.pushViewController(pdfVC, animated: true)
-            
-            
-        }
+        UserDefaults.standard.set(secondarynotes[index]![indexPath.row].title, forKey: "Name")
     }
     
     /*

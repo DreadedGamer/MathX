@@ -6,7 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,48 +19,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cooltext280879586962584 copy.png" translatesAutoresizingMaskIntoConstraints="NO" id="Zh4-Yv-95l">
-                                <rect key="frame" x="16" y="145" width="288" height="89"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="89" id="ahT-WX-ccH"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An App by Orion Corporations" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGs-qV-RkB">
-                                <rect key="frame" x="20" y="313" width="280" height="77"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="77" id="NQG-tt-gjS"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="GillSans-Italic" family="Gill Sans" pointSize="33"/>
+                                <rect key="frame" x="0.0" y="193" width="320" height="202"/>
+                                <fontDescription key="fontDescription" name="GillSans-Italic" family="Gill Sans" pointSize="31"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OrionLogoWhite.png" translatesAutoresizingMaskIntoConstraints="NO" id="pu3-Y9-YpD">
-                                <rect key="frame" x="96" y="411" width="128" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OrionLogoWhite.png" translatesAutoresizingMaskIntoConstraints="NO" id="pu3-Y9-YpD">
+                                <rect key="frame" x="66" y="402" width="189" height="146"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pu3-Y9-YpD" secondAttribute="height" multiplier="188:145" id="r1x-Ba-Yj9"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2018-08-18 at 9.35.58 PM.png" translatesAutoresizingMaskIntoConstraints="NO" id="Zh4-Yv-95l">
+                                <rect key="frame" x="0.0" y="99" width="320" height="46"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Zh4-Yv-95l" firstAttribute="trailing" secondItem="RTP-7r-vaS" secondAttribute="trailingMargin" id="GbX-wl-0Mc"/>
-                            <constraint firstItem="Dyf-mw-8Hb" firstAttribute="bottom" secondItem="pu3-Y9-YpD" secondAttribute="bottom" constant="29" id="JED-6y-T27"/>
-                            <constraint firstItem="VGs-qV-RkB" firstAttribute="centerX" secondItem="pu3-Y9-YpD" secondAttribute="centerX" id="P9d-Vg-Gbw"/>
-                            <constraint firstItem="pu3-Y9-YpD" firstAttribute="leading" secondItem="Dyf-mw-8Hb" secondAttribute="leading" constant="96" id="S4x-dB-8vb"/>
-                            <constraint firstItem="Zh4-Yv-95l" firstAttribute="leading" secondItem="RTP-7r-vaS" secondAttribute="leadingMargin" id="X8N-c5-08w"/>
-                            <constraint firstItem="pu3-Y9-YpD" firstAttribute="top" secondItem="VGs-qV-RkB" secondAttribute="bottom" constant="21" id="YcP-Bv-4o9"/>
-                            <constraint firstItem="VGs-qV-RkB" firstAttribute="leading" secondItem="Dyf-mw-8Hb" secondAttribute="leading" constant="20" id="amC-et-1bJ"/>
-                            <constraint firstItem="VGs-qV-RkB" firstAttribute="top" secondItem="Zh4-Yv-95l" secondAttribute="bottom" constant="79" id="hVQ-Xq-tlC"/>
-                            <constraint firstItem="Zh4-Yv-95l" firstAttribute="top" secondItem="Dyf-mw-8Hb" secondAttribute="top" constant="125" id="t6I-47-b3Q"/>
-                            <constraint firstItem="Zh4-Yv-95l" firstAttribute="centerX" secondItem="VGs-qV-RkB" secondAttribute="centerX" id="zlv-m2-dxu"/>
+                            <constraint firstItem="Zh4-Yv-95l" firstAttribute="top" secondItem="Dyf-mw-8Hb" secondAttribute="top" constant="79" id="1ta-AN-J8t"/>
+                            <constraint firstItem="Zh4-Yv-95l" firstAttribute="width" secondItem="RTP-7r-vaS" secondAttribute="width" id="EEu-8E-u1K"/>
+                            <constraint firstItem="VGs-qV-RkB" firstAttribute="centerY" secondItem="Dyf-mw-8Hb" secondAttribute="centerY" id="KQP-DU-gTS"/>
+                            <constraint firstItem="VGs-qV-RkB" firstAttribute="top" secondItem="Zh4-Yv-95l" secondAttribute="bottom" constant="48" id="NGF-6c-hAj"/>
+                            <constraint firstItem="pu3-Y9-YpD" firstAttribute="centerX" secondItem="VGs-qV-RkB" secondAttribute="centerX" id="O8v-nm-9Ie"/>
+                            <constraint firstItem="pu3-Y9-YpD" firstAttribute="leading" secondItem="Dyf-mw-8Hb" secondAttribute="leading" constant="66" id="Ptw-6f-CXk"/>
+                            <constraint firstItem="pu3-Y9-YpD" firstAttribute="top" secondItem="VGs-qV-RkB" secondAttribute="bottom" constant="7" id="QSf-eM-ZzL"/>
+                            <constraint firstAttribute="bottom" secondItem="pu3-Y9-YpD" secondAttribute="bottom" constant="20" symbolic="YES" id="XEg-ze-kz7"/>
+                            <constraint firstItem="VGs-qV-RkB" firstAttribute="centerX" secondItem="Dyf-mw-8Hb" secondAttribute="centerX" id="Zbq-Fc-jlr"/>
+                            <constraint firstItem="pu3-Y9-YpD" firstAttribute="centerX" secondItem="Zh4-Yv-95l" secondAttribute="centerX" id="h9K-yb-1j2"/>
+                            <constraint firstItem="VGs-qV-RkB" firstAttribute="width" secondItem="RTP-7r-vaS" secondAttribute="width" id="y7J-VJ-YEK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Dyf-mw-8Hb"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R3R-Nn-8ar" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-253.125" y="399.29577464788736"/>
+            <point key="canvasLocation" x="-253.125" y="398.75"/>
         </scene>
     </scenes>
     <resources>
         <image name="OrionLogoWhite.png" width="1463" height="1600"/>
-        <image name="cooltext280879586962584 copy.png" width="299" height="93"/>
+        <image name="Screen Shot 2018-08-18 at 9.35.58 PM.png" width="752" height="304"/>
     </resources>
 </document>
