@@ -26,12 +26,35 @@
 		AFA58A642043F0CA00A227B9 /* note copy.png in Resources */ = {isa = PBXBuildFile; fileRef = AFA58A612043F0CA00A227B9 /* note copy.png */; };
 		AFD18C3B20FC7FB90097D158 /* secondary.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD18C3A20FC7FB90097D158 /* secondary.swift */; };
 		AFD6CABD204D2EC4004D931E /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD6CABC204D2EC4004D931E /* NotesViewController.swift */; };
-		FE6AAEEE2136A185006FABE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6AAEED2136A185006FABE4 /* ViewController.swift */; };
-		FE6AAEF02136A18C006FABE4 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6AAEEF2136A18C006FABE4 /* ResultView.swift */; };
-		FE6AAEF22136A191006FABE4 /* String+Substring.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6AAEF12136A190006FABE4 /* String+Substring.swift */; };
-		FE6AAEF42136A195006FABE4 /* UIView+Fade.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6AAEF32136A195006FABE4 /* UIView+Fade.swift */; };
-		FE6AAEF72136A1B3006FABE4 /* Solving_Quadratic_Equations.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE6AAEF52136A1B2006FABE4 /* Solving_Quadratic_Equations.xcdatamodeld */; };
-		FE6AAEF92136A41D006FABE4 /* 5.0 in Resources */ = {isa = PBXBuildFile; fileRef = FE6AAEF82136A41D006FABE4 /* 5.0 */; };
+		FE6AB2512136AEA2006FABE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6AB2502136AEA2006FABE4 /* ViewController.swift */; };
+		FE6AB2532136AEAF006FABE4 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6AB2522136AEAF006FABE4 /* ResultView.swift */; };
+		FE6AB2552136AEB7006FABE4 /* UIView+Fade.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6AB2542136AEB6006FABE4 /* UIView+Fade.swift */; };
+		FE6AB2572136AEBE006FABE4 /* String+Substring.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6AB2562136AEBD006FABE4 /* String+Substring.swift */; };
+		FE6AB25A2136AF0D006FABE4 /* Solving_Quadratic_Equations.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE6AB2582136AF0D006FABE4 /* Solving_Quadratic_Equations.xcdatamodeld */; };
+		FE6AB25E2137E1FF006FABE4 /* searchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6AB25D2137E1FF006FABE4 /* searchTableViewController.swift */; };
+		FE6AB26A2137FBA6006FABE4 /* Algebraic Manipulation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB2622137FAB6006FABE4 /* Algebraic Manipulation.pdf */; };
+		FE6AB26B2137FBA6006FABE4 /* Data Handling.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB2642137FAB6006FABE4 /* Data Handling.pdf */; };
+		FE6AB26C2137FBA6006FABE4 /* Estimation and Approximation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB2612137FAB6006FABE4 /* Estimation and Approximation.pdf */; };
+		FE6AB26D2137FBA6006FABE4 /* Geometrical Constructions.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB2662137FAB7006FABE4 /* Geometrical Constructions.pdf */; };
+		FE6AB26E2137FBA6006FABE4 /* Integers, Rational and Real Numbers.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB2632137FAB6006FABE4 /* Integers, Rational and Real Numbers.pdf */; };
+		FE6AB26F2137FBA6006FABE4 /* Linear Equations and Formula.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB2672137FAB7006FABE4 /* Linear Equations and Formula.pdf */; };
+		FE6AB2702137FBA6006FABE4 /* Linear Functions and Graphs.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB2682137FAB7006FABE4 /* Linear Functions and Graphs.pdf */; };
+		FE6AB2712137FBA6006FABE4 /* Perimeter and Area of plane figures.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB2652137FAB7006FABE4 /* Perimeter and Area of plane figures.pdf */; };
+		FE6AB2722137FBA6006FABE4 /* Simple Inequalities.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB2692137FAB7006FABE4 /* Simple Inequalities.pdf */; };
+		FE6AB274213815C3006FABE4 /* 2000px-Rapporteur_180deg.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB273213815C2006FABE4 /* 2000px-Rapporteur_180deg.svg.png */; };
+		FE6AB27621381638006FABE4 /* 200px-Rtriangle.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB27521381637006FABE4 /* 200px-Rtriangle.svg.png */; };
+		FE6AB284213837FB006FABE4 /* Estimation and Approximation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB279213837FA006FABE4 /* Estimation and Approximation.pdf */; };
+		FE6AB285213837FB006FABE4 /* Pythagoras Theorem and Trigonometry.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB27A213837FA006FABE4 /* Pythagoras Theorem and Trigonometry.pdf */; };
+		FE6AB286213837FB006FABE4 /* Matrices.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB27B213837FA006FABE4 /* Matrices.pdf */; };
+		FE6AB287213837FB006FABE4 /* Simultaneous Equations.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB27C213837FA006FABE4 /* Simultaneous Equations.pdf */; };
+		FE6AB288213837FB006FABE4 /* Probability.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB27D213837FA006FABE4 /* Probability.pdf */; };
+		FE6AB289213837FB006FABE4 /* Set Language and Notation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB27E213837FA006FABE4 /* Set Language and Notation.pdf */; };
+		FE6AB28A213837FB006FABE4 /* Graphs of Quadratic Functions.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB27F213837FA006FABE4 /* Graphs of Quadratic Functions.pdf */; };
+		FE6AB28B213837FB006FABE4 /* Algebraic Expressions and Formulae.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB280213837FA006FABE4 /* Algebraic Expressions and Formulae.pdf */; };
+		FE6AB28C213837FB006FABE4 /* Equations and Inequalities.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB281213837FB006FABE4 /* Equations and Inequalities.pdf */; };
+		FE6AB28D213837FB006FABE4 /* Congruency and Similarity.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB282213837FB006FABE4 /* Congruency and Similarity.pdf */; };
+		FE6AB28E213837FB006FABE4 /* Direct and Inverse Proportions.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB283213837FB006FABE4 /* Direct and Inverse Proportions.pdf */; };
+		FE6AB29021391927006FABE4 /* Ratio and proportion.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB28F21391926006FABE4 /* Ratio and proportion.pdf */; };
 		FE70496B21147EEF00687FB0 /* Screen Shot 2018-08-03 at 8.13.13 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = FE70496A21147EEF00687FB0 /* Screen Shot 2018-08-03 at 8.13.13 PM.png */; };
 		FE70496D21148A4400687FB0 /* advancedcalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE70496C21148A4400687FB0 /* advancedcalculatorViewController.swift */; };
 		FE70497521153D9500687FB0 /* levelselectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE70497421153D9500687FB0 /* levelselectionViewController.swift */; };
@@ -43,7 +66,7 @@
 		FE72393E212AF29D00CD791C /* resultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE72393D212AF29D00CD791C /* resultViewController.swift */; };
 		FED4A6A1212D2351000AD0B3 /* GamesWithAnimals.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FED4A6A0212D2351000AD0B3 /* GamesWithAnimals.pdf */; };
 		FED4A6A3212D45DF000AD0B3 /* AllToolViewContollers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED4A6A2212D45DF000AD0B3 /* AllToolViewContollers.swift */; };
-		FEDB85F5210F080300585639 /* S1 Unit 1_ Prime Numbers, Highest Common Factor, Lowest Common Multiple.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FEDB85F4210F080300585639 /* S1 Unit 1_ Prime Numbers, Highest Common Factor, Lowest Common Multiple.pdf */; };
+		FEDB85F5210F080300585639 /* Prime Numbers, Highest Common Factor, Lowest Common Multiple.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FEDB85F4210F080300585639 /* Prime Numbers, Highest Common Factor, Lowest Common Multiple.pdf */; };
 		FEFC6D4E21285881003DF6EC /* Screen Shot 2018-08-18 at 9.35.58 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = FEFC6D4D21285881003DF6EC /* Screen Shot 2018-08-18 at 9.35.58 PM.png */; };
 /* End PBXBuildFile section */
 
@@ -71,12 +94,35 @@
 		AFA58A612043F0CA00A227B9 /* note copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "note copy.png"; sourceTree = "<group>"; };
 		AFD18C3A20FC7FB90097D158 /* secondary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondary.swift; sourceTree = "<group>"; };
 		AFD6CABC204D2EC4004D931E /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
-		FE6AAEED2136A185006FABE4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../../Solving-Quadratic-Equations-master/Solving Quadratic Equations/ViewController.swift"; sourceTree = "<group>"; };
-		FE6AAEEF2136A18C006FABE4 /* ResultView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultView.swift; path = "../../Solving-Quadratic-Equations-master/Solving Quadratic Equations/ResultView.swift"; sourceTree = "<group>"; };
-		FE6AAEF12136A190006FABE4 /* String+Substring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Substring.swift"; path = "../../Solving-Quadratic-Equations-master/Solving Quadratic Equations/String+Substring.swift"; sourceTree = "<group>"; };
-		FE6AAEF32136A195006FABE4 /* UIView+Fade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Fade.swift"; path = "../../Solving-Quadratic-Equations-master/Solving Quadratic Equations/UIView+Fade.swift"; sourceTree = "<group>"; };
-		FE6AAEF62136A1B2006FABE4 /* Solving_Quadratic_Equations.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Solving_Quadratic_Equations.xcdatamodel; sourceTree = "<group>"; };
-		FE6AAEF82136A41D006FABE4 /* 5.0 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = 5.0; path = "../../geogebra-math-apps-bundle-5-0-487-0/GeoGebra/HTML5/5.0"; sourceTree = "<group>"; };
+		FE6AB2502136AEA2006FABE4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FE6AB2522136AEAF006FABE4 /* ResultView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		FE6AB2542136AEB6006FABE4 /* UIView+Fade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Fade.swift"; sourceTree = "<group>"; };
+		FE6AB2562136AEBD006FABE4 /* String+Substring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Substring.swift"; sourceTree = "<group>"; };
+		FE6AB2592136AF0D006FABE4 /* Solving_Quadratic_Equations.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Solving_Quadratic_Equations.xcdatamodel; sourceTree = "<group>"; };
+		FE6AB25D2137E1FF006FABE4 /* searchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchTableViewController.swift; sourceTree = "<group>"; };
+		FE6AB2612137FAB6006FABE4 /* Estimation and Approximation.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Estimation and Approximation.pdf"; sourceTree = "<group>"; };
+		FE6AB2622137FAB6006FABE4 /* Algebraic Manipulation.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Algebraic Manipulation.pdf"; sourceTree = "<group>"; };
+		FE6AB2632137FAB6006FABE4 /* Integers, Rational and Real Numbers.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Integers, Rational and Real Numbers.pdf"; sourceTree = "<group>"; };
+		FE6AB2642137FAB6006FABE4 /* Data Handling.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Data Handling.pdf"; sourceTree = "<group>"; };
+		FE6AB2652137FAB7006FABE4 /* Perimeter and Area of plane figures.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Perimeter and Area of plane figures.pdf"; sourceTree = "<group>"; };
+		FE6AB2662137FAB7006FABE4 /* Geometrical Constructions.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Geometrical Constructions.pdf"; sourceTree = "<group>"; };
+		FE6AB2672137FAB7006FABE4 /* Linear Equations and Formula.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Linear Equations and Formula.pdf"; sourceTree = "<group>"; };
+		FE6AB2682137FAB7006FABE4 /* Linear Functions and Graphs.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Linear Functions and Graphs.pdf"; sourceTree = "<group>"; };
+		FE6AB2692137FAB7006FABE4 /* Simple Inequalities.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Simple Inequalities.pdf"; sourceTree = "<group>"; };
+		FE6AB273213815C2006FABE4 /* 2000px-Rapporteur_180deg.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2000px-Rapporteur_180deg.svg.png"; sourceTree = "<group>"; };
+		FE6AB27521381637006FABE4 /* 200px-Rtriangle.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "200px-Rtriangle.svg.png"; sourceTree = "<group>"; };
+		FE6AB279213837FA006FABE4 /* Estimation and Approximation.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Estimation and Approximation.pdf"; path = "../../missing gifs higher chinese/Estimation and Approximation.pdf"; sourceTree = "<group>"; };
+		FE6AB27A213837FA006FABE4 /* Pythagoras Theorem and Trigonometry.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Pythagoras Theorem and Trigonometry.pdf"; sourceTree = "<group>"; };
+		FE6AB27B213837FA006FABE4 /* Matrices.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Matrices.pdf; sourceTree = "<group>"; };
+		FE6AB27C213837FA006FABE4 /* Simultaneous Equations.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Simultaneous Equations.pdf"; sourceTree = "<group>"; };
+		FE6AB27D213837FA006FABE4 /* Probability.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Probability.pdf; sourceTree = "<group>"; };
+		FE6AB27E213837FA006FABE4 /* Set Language and Notation.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Set Language and Notation.pdf"; sourceTree = "<group>"; };
+		FE6AB27F213837FA006FABE4 /* Graphs of Quadratic Functions.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Graphs of Quadratic Functions.pdf"; sourceTree = "<group>"; };
+		FE6AB280213837FA006FABE4 /* Algebraic Expressions and Formulae.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Algebraic Expressions and Formulae.pdf"; sourceTree = "<group>"; };
+		FE6AB281213837FB006FABE4 /* Equations and Inequalities.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Equations and Inequalities.pdf"; sourceTree = "<group>"; };
+		FE6AB282213837FB006FABE4 /* Congruency and Similarity.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Congruency and Similarity.pdf"; sourceTree = "<group>"; };
+		FE6AB283213837FB006FABE4 /* Direct and Inverse Proportions.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Direct and Inverse Proportions.pdf"; sourceTree = "<group>"; };
+		FE6AB28F21391926006FABE4 /* Ratio and proportion.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Ratio and proportion.pdf"; sourceTree = "<group>"; };
 		FE70496A21147EEF00687FB0 /* Screen Shot 2018-08-03 at 8.13.13 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2018-08-03 at 8.13.13 PM.png"; sourceTree = "<group>"; };
 		FE70496C21148A4400687FB0 /* advancedcalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = advancedcalculatorViewController.swift; sourceTree = "<group>"; };
 		FE70497421153D9500687FB0 /* levelselectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = levelselectionViewController.swift; sourceTree = "<group>"; };
@@ -88,7 +134,7 @@
 		FE72393D212AF29D00CD791C /* resultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resultViewController.swift; sourceTree = "<group>"; };
 		FED4A6A0212D2351000AD0B3 /* GamesWithAnimals.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = GamesWithAnimals.pdf; sourceTree = "<group>"; };
 		FED4A6A2212D45DF000AD0B3 /* AllToolViewContollers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllToolViewContollers.swift; sourceTree = "<group>"; };
-		FEDB85F4210F080300585639 /* S1 Unit 1_ Prime Numbers, Highest Common Factor, Lowest Common Multiple.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "S1 Unit 1_ Prime Numbers, Highest Common Factor, Lowest Common Multiple.pdf"; sourceTree = "<group>"; };
+		FEDB85F4210F080300585639 /* Prime Numbers, Highest Common Factor, Lowest Common Multiple.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Prime Numbers, Highest Common Factor, Lowest Common Multiple.pdf"; sourceTree = "<group>"; };
 		FEFC6D4D21285881003DF6EC /* Screen Shot 2018-08-18 at 9.35.58 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2018-08-18 at 9.35.58 PM.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,15 +180,18 @@
 		AFA58A292043E84200A227B9 /* MathX */ = {
 			isa = PBXGroup;
 			children = (
-				FE6AAEF52136A1B2006FABE4 /* Solving_Quadratic_Equations.xcdatamodeld */,
-				FE6AAEED2136A185006FABE4 /* ViewController.swift */,
-				FE6AAEEF2136A18C006FABE4 /* ResultView.swift */,
-				FE6AAEF12136A190006FABE4 /* String+Substring.swift */,
-				FE6AAEF32136A195006FABE4 /* UIView+Fade.swift */,
+				FE6AB25D2137E1FF006FABE4 /* searchTableViewController.swift */,
+				FE6AB2582136AF0D006FABE4 /* Solving_Quadratic_Equations.xcdatamodeld */,
+				FE6AB2502136AEA2006FABE4 /* ViewController.swift */,
+				FE6AB2522136AEAF006FABE4 /* ResultView.swift */,
+				FE6AB2562136AEBD006FABE4 /* String+Substring.swift */,
+				FE6AB2542136AEB6006FABE4 /* UIView+Fade.swift */,
 				FE70497421153D9500687FB0 /* levelselectionViewController.swift */,
 				AFA58A2A2043E84200A227B9 /* AppDelegate.swift */,
 				AFA58A2E2043E84200A227B9 /* Main.storyboard */,
 				FED4A6A2212D45DF000AD0B3 /* AllToolViewContollers.swift */,
+				FE6AB273213815C2006FABE4 /* 2000px-Rapporteur_180deg.svg.png */,
+				FE6AB27521381637006FABE4 /* 200px-Rtriangle.svg.png */,
 				FE72393D212AF29D00CD791C /* resultViewController.swift */,
 				FE70496C21148A4400687FB0 /* advancedcalculatorViewController.swift */,
 				AFD18C3A20FC7FB90097D158 /* secondary.swift */,
@@ -153,7 +202,6 @@
 				AFA58A332043E84200A227B9 /* LaunchScreen.storyboard */,
 				AFA58A362043E84200A227B9 /* Info.plist */,
 				AF2763C020720F440070787B /* ethnocentric rg it.ttf */,
-				FE6AAEF82136A41D006FABE4 /* 5.0 */,
 				FE7049772116F9BF00687FB0 /* Pdfs */,
 				AFA58A3E2043EAA900A227B9 /* Photos */,
 			);
@@ -202,7 +250,16 @@
 		FE7049782116F9DD00687FB0 /* sec 1 */ = {
 			isa = PBXGroup;
 			children = (
-				FEDB85F4210F080300585639 /* S1 Unit 1_ Prime Numbers, Highest Common Factor, Lowest Common Multiple.pdf */,
+				FE6AB2622137FAB6006FABE4 /* Algebraic Manipulation.pdf */,
+				FE6AB2642137FAB6006FABE4 /* Data Handling.pdf */,
+				FE6AB2612137FAB6006FABE4 /* Estimation and Approximation.pdf */,
+				FE6AB2662137FAB7006FABE4 /* Geometrical Constructions.pdf */,
+				FE6AB2632137FAB6006FABE4 /* Integers, Rational and Real Numbers.pdf */,
+				FE6AB2672137FAB7006FABE4 /* Linear Equations and Formula.pdf */,
+				FE6AB2682137FAB7006FABE4 /* Linear Functions and Graphs.pdf */,
+				FE6AB2652137FAB7006FABE4 /* Perimeter and Area of plane figures.pdf */,
+				FE6AB2692137FAB7006FABE4 /* Simple Inequalities.pdf */,
+				FEDB85F4210F080300585639 /* Prime Numbers, Highest Common Factor, Lowest Common Multiple.pdf */,
 			);
 			name = "sec 1";
 			sourceTree = "<group>";
@@ -210,6 +267,18 @@
 		FE7049792116F9E400687FB0 /* sec 2 */ = {
 			isa = PBXGroup;
 			children = (
+				FE6AB28F21391926006FABE4 /* Ratio and proportion.pdf */,
+				FE6AB283213837FB006FABE4 /* Direct and Inverse Proportions.pdf */,
+				FE6AB279213837FA006FABE4 /* Estimation and Approximation.pdf */,
+				FE6AB27D213837FA006FABE4 /* Probability.pdf */,
+				FE6AB27A213837FA006FABE4 /* Pythagoras Theorem and Trigonometry.pdf */,
+				FE6AB27B213837FA006FABE4 /* Matrices.pdf */,
+				FE6AB27E213837FA006FABE4 /* Set Language and Notation.pdf */,
+				FE6AB27C213837FA006FABE4 /* Simultaneous Equations.pdf */,
+				FE6AB280213837FA006FABE4 /* Algebraic Expressions and Formulae.pdf */,
+				FE6AB27F213837FA006FABE4 /* Graphs of Quadratic Functions.pdf */,
+				FE6AB281213837FB006FABE4 /* Equations and Inequalities.pdf */,
+				FE6AB282213837FB006FABE4 /* Congruency and Similarity.pdf */,
 			);
 			name = "sec 2";
 			sourceTree = "<group>";
@@ -276,6 +345,11 @@
 					AFA58A262043E84200A227B9 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -302,26 +376,48 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE6AB26A2137FBA6006FABE4 /* Algebraic Manipulation.pdf in Resources */,
+				FE6AB26B2137FBA6006FABE4 /* Data Handling.pdf in Resources */,
+				FE6AB29021391927006FABE4 /* Ratio and proportion.pdf in Resources */,
+				FE6AB26C2137FBA6006FABE4 /* Estimation and Approximation.pdf in Resources */,
+				FE6AB285213837FB006FABE4 /* Pythagoras Theorem and Trigonometry.pdf in Resources */,
+				FE6AB26D2137FBA6006FABE4 /* Geometrical Constructions.pdf in Resources */,
+				FE6AB28C213837FB006FABE4 /* Equations and Inequalities.pdf in Resources */,
+				FE6AB26E2137FBA6006FABE4 /* Integers, Rational and Real Numbers.pdf in Resources */,
+				FE6AB26F2137FBA6006FABE4 /* Linear Equations and Formula.pdf in Resources */,
+				FE6AB2702137FBA6006FABE4 /* Linear Functions and Graphs.pdf in Resources */,
+				FE6AB286213837FB006FABE4 /* Matrices.pdf in Resources */,
+				FE6AB2712137FBA6006FABE4 /* Perimeter and Area of plane figures.pdf in Resources */,
+				FE6AB274213815C3006FABE4 /* 2000px-Rapporteur_180deg.svg.png in Resources */,
+				FE6AB2722137FBA6006FABE4 /* Simple Inequalities.pdf in Resources */,
+				FE6AB28D213837FB006FABE4 /* Congruency and Similarity.pdf in Resources */,
+				FE6AB28B213837FB006FABE4 /* Algebraic Expressions and Formulae.pdf in Resources */,
+				FE6AB28E213837FB006FABE4 /* Direct and Inverse Proportions.pdf in Resources */,
 				AFA58A3D2043EA8B00A227B9 /* Screen Shot 2018-01-12 at 8.46.23 AM.png in Resources */,
 				FE70496B21147EEF00687FB0 /* Screen Shot 2018-08-03 at 8.13.13 PM.png in Resources */,
 				FED4A6A1212D2351000AD0B3 /* GamesWithAnimals.pdf in Resources */,
 				AFA58A622043F0CA00A227B9 /* note copy 2.png in Resources */,
 				AF47CEA02072261D00949253 /* OrionLogoWhite.png in Resources */,
-				FEDB85F5210F080300585639 /* S1 Unit 1_ Prime Numbers, Highest Common Factor, Lowest Common Multiple.pdf in Resources */,
+				FEDB85F5210F080300585639 /* Prime Numbers, Highest Common Factor, Lowest Common Multiple.pdf in Resources */,
 				FEFC6D4E21285881003DF6EC /* Screen Shot 2018-08-18 at 9.35.58 PM.png in Resources */,
 				AFA58A352043E84200A227B9 /* LaunchScreen.storyboard in Resources */,
 				AFA58A322043E84200A227B9 /* Assets.xcassets in Resources */,
+				FE6AB287213837FB006FABE4 /* Simultaneous Equations.pdf in Resources */,
+				FE6AB27621381638006FABE4 /* 200px-Rtriangle.svg.png in Resources */,
 				AFA58A632043F0CA00A227B9 /* note.png in Resources */,
 				AFA58A562043EFA400A227B9 /* calculator.png in Resources */,
+				FE6AB284213837FB006FABE4 /* Estimation and Approximation.pdf in Resources */,
 				AFA58A302043E84200A227B9 /* Main.storyboard in Resources */,
 				FE7049842116FA3E00687FB0 /* math-1547018_960_720.jpg in Resources */,
+				FE6AB289213837FB006FABE4 /* Set Language and Notation.pdf in Resources */,
 				AFA58A5E2043F0C200A227B9 /* cheatsheet copy 2.png in Resources */,
 				AFA58A5C2043F0C200A227B9 /* cheatsheet copy.png in Resources */,
 				FE7049822116FA3E00687FB0 /* download.jpeg in Resources */,
 				AF2763C2207210460070787B /* ethnocentric rg it.ttf in Resources */,
-				FE6AAEF92136A41D006FABE4 /* 5.0 in Resources */,
 				AFA58A642043F0CA00A227B9 /* note copy.png in Resources */,
 				FE7049812116FA3E00687FB0 /* Pure-mathematics-formulæ-blackboard.jpg in Resources */,
+				FE6AB28A213837FB006FABE4 /* Graphs of Quadratic Functions.pdf in Resources */,
+				FE6AB288213837FB006FABE4 /* Probability.pdf in Resources */,
 				FE7049832116FA3E00687FB0 /* mathematics-989124_960_720.jpg in Resources */,
 				AF2763BF20720E780070787B /* cooltext280879586962584 copy.png in Resources */,
 				AFA58A5D2043F0C200A227B9 /* cheatsheet.png in Resources */,
@@ -389,20 +485,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE6AAEEE2136A185006FABE4 /* ViewController.swift in Sources */,
-				FE6AAEF72136A1B3006FABE4 /* Solving_Quadratic_Equations.xcdatamodeld in Sources */,
+				FE6AB2552136AEB7006FABE4 /* UIView+Fade.swift in Sources */,
+				FE6AB25A2136AF0D006FABE4 /* Solving_Quadratic_Equations.xcdatamodeld in Sources */,
+				FE6AB2512136AEA2006FABE4 /* ViewController.swift in Sources */,
 				FE70497521153D9500687FB0 /* levelselectionViewController.swift in Sources */,
-				FE6AAEF02136A18C006FABE4 /* ResultView.swift in Sources */,
+				FE6AB2532136AEAF006FABE4 /* ResultView.swift in Sources */,
 				FE70496D21148A4400687FB0 /* advancedcalculatorViewController.swift in Sources */,
-				FE6AAEF22136A191006FABE4 /* String+Substring.swift in Sources */,
 				FED4A6A3212D45DF000AD0B3 /* AllToolViewContollers.swift in Sources */,
+				FE6AB2572136AEBE006FABE4 /* String+Substring.swift in Sources */,
 				AFD6CABD204D2EC4004D931E /* NotesViewController.swift in Sources */,
 				FE72393E212AF29D00CD791C /* resultViewController.swift in Sources */,
+				FE6AB25E2137E1FF006FABE4 /* searchTableViewController.swift in Sources */,
 				AFD18C3B20FC7FB90097D158 /* secondary.swift in Sources */,
 				AFA58A2B2043E84200A227B9 /* AppDelegate.swift in Sources */,
 				AF8B79BC208495FB003EC1E5 /* CalculatorViewController.swift in Sources */,
 				FE704986211C3C9800687FB0 /* DetailViewController.swift in Sources */,
-				FE6AAEF42136A195006FABE4 /* UIView+Fade.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,14 +688,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		FE6AAEF52136A1B2006FABE4 /* Solving_Quadratic_Equations.xcdatamodeld */ = {
+		FE6AB2582136AF0D006FABE4 /* Solving_Quadratic_Equations.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				FE6AAEF62136A1B2006FABE4 /* Solving_Quadratic_Equations.xcdatamodel */,
+				FE6AB2592136AF0D006FABE4 /* Solving_Quadratic_Equations.xcdatamodel */,
 			);
-			currentVersion = FE6AAEF62136A1B2006FABE4 /* Solving_Quadratic_Equations.xcdatamodel */;
-			name = Solving_Quadratic_Equations.xcdatamodeld;
-			path = "../../Solving-Quadratic-Equations-master/Solving Quadratic Equations/Solving_Quadratic_Equations.xcdatamodeld";
+			currentVersion = FE6AB2592136AF0D006FABE4 /* Solving_Quadratic_Equations.xcdatamodel */;
+			path = Solving_Quadratic_Equations.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

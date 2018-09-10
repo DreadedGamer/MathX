@@ -9,6 +9,7 @@
 import UIKit
 import CoreSpotlight
 import MobileCoreServices
+import CoreData
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

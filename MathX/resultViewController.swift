@@ -8,11 +8,14 @@
 
 import UIKit
 class resultViewController: UIViewController,UIWebViewDelegate {
-
+    @IBOutlet var activity: UIActivityIndicatorView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let url = Bundle.main.url(forResource: "GamesWithAnimals", withExtension: "pdf") {
-            let name = UserDefaults.standard.string(forKey: "Name")
+        let name = UserDefaults.standard.string(forKey: "Name")
+        print(name)
+        self.title = name
+        if let url = Bundle.main.url(forResource: name, withExtension: "pdf") {
             let webView = UIWebView(frame: self.view.frame)
             let urlRequest = URLRequest(url: url)
             
@@ -22,12 +25,22 @@ class resultViewController: UIViewController,UIWebViewDelegate {
             pdfVC.view.addSubview(webView)
             pdfVC.title = name
             webView.delegate = self
+        }else{
+            print("error")
+            print(Bundle.main.url(forResource: name, withExtension: "pdf"))
         }
         // Do any additional setup after loading the view.
     }
-    
+    func webViewDidFinishLoad(_ webView: UIWebView) {
+        activity.stopAnimating()
+    }
+    func webViewDidStartLoad(_ webView: UIWebView) {
+        activity.startAnimating()
+        
+    }
     public func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool
     {
+        
         if navigationType == .linkClicked
         {
           print(request)

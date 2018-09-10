@@ -7,30 +7,31 @@
 //
 
 import UIKit
-class geogebra: UIViewController {
-
+import WebKit
+import AVKit
+class geogebra: UIViewController,WKUIDelegate,WKNavigationDelegate {
     @IBOutlet var webview: WKWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Grapher"
-        do {
-            guard let filePath = Bundle.main.path(forResource: "graphing-template-beta", ofType: "html")
-                else {
-                    // File Error
-                    print ("File reading error")
-                    return
-            }
-            
-            let contents =  try String(contentsOfFile: filePath, encoding: .utf8)
-            let baseUrl = URL(fileURLWithPath: filePath)
-            webview.loadHTMLString(contents as String, baseURL: baseUrl)
-        }
-        catch {
-            print ("File HTML error")
-        }
+            let url = URL(string: "https://www.desmos.com/api/v1.1/docs/examples/fullscreen.html")
+            let request = URLRequest(url: url!)
+            webview.load(request)
+        webview.uiDelegate = self
+        webview.navigationDelegate = self
+        self.hideKeyboardWhenTappedAround()
         // Do any additional setup after loading the view.
     }
-
+    @IBOutlet var activity: UIActivityIndicatorView!
+    
+    func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+        alert(message: String(describing: error))
+        activity.stopAnimating()
+    }
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        activity.stopAnimating()
+        print("loaded")
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -48,13 +49,327 @@ class geogebra: UIViewController {
     */
 
 }
+class trigo: UIViewController{
+    @IBOutlet var a: UITextField!
+    @IBOutlet var b: UITextField!
+    @IBOutlet var c: UITextField!
+    var count = 0
+    var x = RightTriangle(length: 0, width: 0)
+    var missingvalue = ""
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
+        self.title = "Trigo calculator"
+        // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func update(_ sender: Any) {
+     
+        if(Int(a.text!) != nil){
+            count = count + 1
+            x = RightTriangle(length: Double(a.text!)!, width: x.width)
+            
+        }else{
+            missingvalue = "a"
+        }
+        print(x)
+        if(Int(b.text!) != nil){
+            count = count + 1
+            x = RightTriangle(length: x.length, width: Double(b.text!)!)
+        }else{
+            missingvalue = "b"
+        }
+        print(x)
+        if(Int(c.text!) != nil){
+            count = count + 1
+           x.hypotenuse = Double(c.text!)!
+            
+        }else{
+          missingvalue = "c"
+        }
+        if(count == 2){
+            print(x)
+            if(missingvalue == "a"){
+             a.text = String(x.length)
+            }else if(missingvalue == "b"){
+               b.text = String(x.width)
+            }else if(missingvalue == "c"){
+               c.text = String(x.hypotenuse)
+            }
+        }else if(count == 3){
+            alert(message: "No unknown")
+        }else{
+            alert(message: "Error")
+        }
+        count = 0
+    }
+    
+    struct RightTriangle: CustomStringConvertible {
+        private var _length: Double
+        private var _width: Double
+        
+        var length: Double {
+            get {
+                return _length
+            }
+            set {
+                let h = self.hypotenuse
+                _length = newValue
+                _width = sqrt(h * h - _length * _length)
+            }
+        }
+        
+        var width: Double  {
+            get {
+                return _width
+            }
+            set {
+                let h = self.hypotenuse
+                _width = newValue
+                _length = sqrt(h * h - _width * _width)
+            }
+            
+        }
+        
+        var hypotenuse: Double {
+            get {
+                return sqrt(length * length + width * width)
+            }
+            set {
+                _width = sqrt((newValue * newValue) - (length * length))
+            }
+        }
+        
+        init(length: Double, width: Double) {
+            _length = length
+            _width = width
+        }
+        
+        var description: String {
+            return "length = \(length), width = \(width), hypotenuse = \(hypotenuse)"
+        }
+    }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
+}
+import Accelerate
+import simd
+typealias LAInt = __CLPK_integer
+class simuleqn: UIViewController {
+    @IBOutlet var first_equation_x: UITextField!
+    @IBOutlet var first_equation_result: UITextField!
+    @IBOutlet var first_equation_y: UITextField!
+    @IBOutlet var second_equation_x: UITextField!
+    @IBOutlet var second_equation_y: UITextField!
+    @IBOutlet var second_equation_result: UITextField!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
+        // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func submit(_ sender: Any) {
+        if(Int(first_equation_x.text!) != nil && Int(first_equation_y.text!) != nil && Int(first_equation_result.text!) != nil && Int(second_equation_x.text!) != nil && Int(second_equation_y.text!) != nil && Int(second_equation_result.text!) != nil && Int(first_equation_x.text!) != nil){
+            
+            //equation 1
+            
+            //(first_equation_y * second_equation_x)
+            //(first_equation_result * second_equation_x)
+            
+            //equation 2
+            
+           //(second_equation_y * first_equation_x)
+            //(second_equation_result * first_equation_x)
+            
+            //eliminate x
+            //Result:
+            //(second_equation_result * first_equation_x) - (first_equation_result * second_equation_x):y
+            //(second_equation_y * first_equation_x)- (first_equation_y * second_equation_x):result
+            
+            //eavaluate y
+            //(second_equation_y * first_equation_x)- (first_equation_y * second_equation_x)/(second_equation_result * first_equation_x) - (first_equation_result * second_equation_x):y
+            
+            //evaluate x(substitution)
+            
+            //(first_equation_result- y * first_equation_y)/first_equation_x
+            
+    }
+    }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
+}
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+}
+class potractor: UIViewController,AVCaptureVideoDataOutputSampleBufferDelegate {
+    
+    let captureSession = AVCaptureSession()
+    var previewLayer:CALayer!
+    
+    var captureDevice:AVCaptureDevice!
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        prepareCamera()
+    }
+    
+    
+    func prepareCamera() {
+        captureSession.sessionPreset = AVCaptureSession.Preset.photo
+        
+        let availableDevices = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInWideAngleCamera], mediaType: AVMediaType.video, position: .back).devices
+            captureDevice = availableDevices.first
+        
+            beginSession()
+        
+        
+    }
+    @IBOutlet var image: UIImageView!
+    
+    @IBOutlet var label: UILabel!
+    func beginSession () {
+        if(captureDevice != nil){
+        do {
+            let captureDeviceInput = try AVCaptureDeviceInput(device: captureDevice)
+            
+            captureSession.addInput(captureDeviceInput)
+            
+        }catch {
+            print(error.localizedDescription)
+        }
+        
+        
+        let previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
+            self.previewLayer = previewLayer
+            self.view.layer.addSublayer(self.previewLayer)
+        view.bringSubview(toFront: image)
+            view.bringSubview(toFront: label)
+            self.previewLayer.frame = self.view.layer.frame
+            captureSession.startRunning()
+            
+            let dataOutput = AVCaptureVideoDataOutput()
+            dataOutput.videoSettings = [(kCVPixelBufferPixelFormatTypeKey as NSString):NSNumber(value:kCVPixelFormatType_32BGRA)] as [String : Any]
+            
+            dataOutput.alwaysDiscardsLateVideoFrames = true
+            
+            if captureSession.canAddOutput(dataOutput) {
+                captureSession.addOutput(dataOutput)
+            }
+            
+            captureSession.commitConfiguration()
+            
+            
+            let queue = DispatchQueue(label: "com.brianadvent.captureQueue")
+            dataOutput.setSampleBufferDelegate(self, queue: queue)
+            
+            
+            
+        
+        }else{
+            alert(message: "Error")
+        }
+    }
+    
+    
+    
+    
+    
+    
+    func stopCaptureSession () {
+        self.captureSession.stopRunning()
+        
+        if let inputs = captureSession.inputs as? [AVCaptureDeviceInput] {
+            for input in inputs {
+                self.captureSession.removeInput(input)
+            }
+        }
+        
+    }
+    
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let screenSize = previewLayer.bounds.size
+        if let touchPoint = touches.first {
+            let x = touchPoint.location(in: self.view).y / screenSize.height
+            let y = 1.0 - touchPoint.location(in: self.view).x / screenSize.width
+            let focusPoint = CGPoint(x: x, y: y)
+            
+            if let device = captureDevice {
+                do {
+                    try device.lockForConfiguration()
+                    
+                    device.focusPointOfInterest = focusPoint
+                    //device.focusMode = .continuousAutoFocus
+                    device.focusMode = .autoFocus
+                    //device.focusMode = .locked
+                    device.exposurePointOfInterest = focusPoint
+                    device.exposureMode = AVCaptureDevice.ExposureMode.continuousAutoExposure
+                    device.unlockForConfiguration()
+                }
+                catch {
+                    // just ignore
+                }
+            }
+        }
+    }
+    
+}
+
+
 class sets: UIViewController {
     @IBOutlet var select: UISegmentedControl!
     @IBOutlet var set_a: UITextField!
     @IBOutlet var set_b: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.hideKeyboardWhenTappedAround()
         // Do any additional setup after loading the view.
     }
     @IBOutlet var result: UITextView!
@@ -63,9 +378,9 @@ class sets: UIViewController {
         let setbtext : Set = Set(set_b.text!.components(separatedBy: ","))
         if(setatext != nil && setbtext != nil){
             if(select.selectedSegmentIndex == 0){
-                result.text = String(setatext.union(setbtext))
+                result.text = [String](setatext.union(setbtext)).description
             }else if(select.selectedSegmentIndex == 1){
-                result.text = String(setatext.intersection(setbtext))
+                result.text = [String](setatext.intersection(setbtext)).description
             }else if(select.selectedSegmentIndex == 2){
                 result.text = String(setatext.isSubset(of: setbtext))
             }
@@ -96,19 +411,19 @@ class lcmandhcf: UIViewController {
     @IBOutlet var select: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.hideKeyboardWhenTappedAround()
         // Do any additional setup after loading the view.
     }
     @IBAction func Calcualte(_ sender: Any) {
-        if(Int(number1.text!) != nil && Int(number.text!) != nil){
+        if(Int(number1.text!) != nil && Int(number.text!) != nil && Int(number.text!) != 0 && Int(number.text!) != 0){
         if(select.selectedSegmentIndex == 0){
-           alert(message: String(lcm(num1: Int(number.text!)!, num2: Int(number.text!)!)))
+           alert(message: String(lcm(num1: Int(number1.text!)!, num2: Int(number.text!)!)))
             
         }else if(select.selectedSegmentIndex == 1){
-            alert(message: String(hcf(num1: Int(number.text!)!, num2: Int(number.text!)!)))
+            alert(message: String(hcf(num1: Int(number1.text!)!, num2: Int(number.text!)!)))
         }
         else if(select.selectedSegmentIndex == 2){
-            alert(message: String(gcd(num1: Int(number.text!)!, num2: Int(number.text!)!)))
+            alert(message: String(gcd(num1: Int(number1.text!)!, num2: Int(number.text!)!)))
         }
         }
     }
@@ -131,6 +446,7 @@ class lcmandhcf: UIViewController {
             return gcd(num1: num2, num2: num1 % num2)
         }
     }
+    
     func lcm(num1: Int, num2: Int) -> Int {
         return num1 * num2 / gcd(num1: num1, num2: num2)
     }
@@ -166,7 +482,7 @@ class Matrix: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.hideKeyboardWhenTappedAround()
         
         // Do any additional setup after loading the view.
     }
@@ -214,9 +530,11 @@ class Matrix: UIViewController {
         answere.text = prettyMatrixdisplay(result)
                 }
             }else{
+                alert(message: "Error")
                 print("error1")
             }
         }else{
+            alert(message: "Error")
             print("error2")
         }
     }
@@ -250,6 +568,7 @@ class Matrix: UIViewController {
         if matrixA[ 0 ].count != matrixB.count {
             
             print( "Illegal matrix dimensions!" )
+            alert(message: "Illegal matrix dimensions!")
             return [[]] // returns empty matrix
         }
         
