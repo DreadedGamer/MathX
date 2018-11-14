@@ -49,6 +49,134 @@ class geogebra: UIViewController,WKUIDelegate,WKNavigationDelegate {
     */
 
 }
+class radomise: UIViewController,UITableViewDelegate,UITableViewDataSource, UITextFieldDelegate {
+    
+    // reset does not reset summary section
+    var array = [Int:Int]()
+    var total = 0.0
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: .default, reuseIdentifier: "hi")
+        print(array)
+ 
+        if(segmented.selectedSegmentIndex == 0){
+            cell.textLabel?.text = String(indexPath.row+1) + ")" + String(data[indexPath.row])
+        }else{
+            if(array[indexPath.row + 1] != nil){
+                let percentage = String(((Double(array[indexPath.row + 1]!) / total) * 100).rounded(toPlaces: 3)) + "%"
+                cell.textLabel?.text = String(indexPath.row + 1) + "'s Occurrences - " + String(array[indexPath.row + 1]!) + " Percentage- " + percentage
+                print(array)
+            }else{
+                cell.textLabel?.adjustsFontSizeToFitWidth = true
+                cell.textLabel?.text = String(indexPath.row + 1) + "'s Occurrences - 0 Percentage- 0%"
+                
+            }
+          
+        }
+        
+        return cell
+    }
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        var name = "Datapoints"
+        if(segmented.selectedSegmentIndex == 0){
+            name = "Datapoints"
+        }else{
+            name = "Summary"
+        }
+        return name
+    }
+    var data : [Int] = []
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if(segmented.selectedSegmentIndex == 0){
+            return data.count
+        }else{
+            return Int(maxnumber.text!) ?? 0
+        }
+        
+    }
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+
+    @IBAction func changed(_ sender: Any) {
+        tableview.reloadData()
+    }
+    @IBAction func havechanged(_ sender: Any) {
+        total = 0.0
+        data.removeAll()
+        array.removeAll()
+        tableview.reloadData()
+    }
+    
+    
+    
+    
+
+    @IBOutlet var number: UILabel!
+    
+    @IBOutlet var segmented: UISegmentedControl!
+    @IBOutlet var maxnumber: UITextField!
+    @IBOutlet var tableview: UITableView!
+    @IBAction func touched(_ sender: Any) {
+        
+        if(UInt32(maxnumber.text!) != nil && Int(maxnumber.text!)! > 0){
+            
+            let randomInt = Int(arc4random_uniform(UInt32(maxnumber.text!)!) + 1)
+        data.append(randomInt)
+        number.text = String(randomInt)
+            if array[randomInt] != nil {
+                array[randomInt] = array[randomInt]! + 1
+                let indexPath = IndexPath(item: randomInt - 1, section: 0)
+                tableview.reloadData()
+            }else{
+                array[randomInt] = 1
+                tableview.reloadData()
+            }
+            total = total + 1
+        
+        }else{
+            alert(message: "Error imput")
+        }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
+    override func viewDidLoad() {
+        self.title = "Probability"
+        maxnumber.delegate = self
+      tableview.dataSource = self
+        tableview.delegate = self
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Reset", style: .plain, target: self, action: #selector(addTapped2))
+        
+        // Do any additional setup after loading the view.
+    }
+    @objc func addTapped2(){
+        maxnumber.text = "2"
+        number.text = "0"
+        array.removeAll()
+        total = 0.0
+        data.removeAll()
+        tableview.reloadData()
+    }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
+}
 class trigo: UIViewController{
     @IBOutlet var a: UITextField!
     @IBOutlet var b: UITextField!
@@ -285,8 +413,8 @@ class potractor: UIViewController,AVCaptureVideoDataOutputSampleBufferDelegate {
         let previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
             self.previewLayer = previewLayer
             self.view.layer.addSublayer(self.previewLayer)
-        view.bringSubview(toFront: image)
-            view.bringSubview(toFront: label)
+        view.bringSubviewToFront(image)
+            view.bringSubviewToFront(label)
             self.previewLayer.frame = self.view.layer.frame
             captureSession.startRunning()
             
@@ -527,7 +655,7 @@ class Matrix: UIViewController {
                 if(result.isEmpty){
                     answere.text = "Illegal matrix dimensions!"
                 }else{
-        answere.text = prettyMatrixdisplay(result)
+                    answere.text = prettyMatrixdisplay(result).replacingOccurrences(of: ",]", with: "]")
                 }
             }else{
                 alert(message: "Error")
@@ -563,6 +691,7 @@ class Matrix: UIViewController {
         }
         return final
     }
+    
     func multiply( _ matrixA:[[Int]], _ matrixB:[[Int]]) -> [[Int]] {
         
         if matrixA[ 0 ].count != matrixB.count {
@@ -607,7 +736,7 @@ class twodarea: UIViewController {
         view.layer.addSublayer(shape)
         shape.opacity = 0.5
         shape.lineWidth = 2
-        shape.lineJoin = kCALineJoinMiter
+        shape.lineJoin = CAShapeLayerLineJoin.miter
         shape.strokeColor = UIColor(hue: 0.786, saturation: 0.79, brightness: 0.53, alpha: 1.0).cgColor
         shape.fillColor = UIColor(hue: 0.786, saturation: 0.15, brightness: 0.89, alpha: 1.0).cgColor
         path.move(to: CGPoint(x: 0, y: 0))
@@ -674,3 +803,5 @@ extension UIViewController {
     }
     
 }
+
+

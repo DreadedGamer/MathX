@@ -13,7 +13,8 @@ class CalculatorViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         past_equation.adjustsFontSizeToFitWidth = true
-         self.navigationController?.setNavigationBarHidden(true, animated: false)
+//         self.navigationController?.setNavigationBarHidden(true, animated: false)
+        self.title = "Calculator"
         // Do any additional setup after loading the view.
     }
     
@@ -228,12 +229,12 @@ class CalculatorViewController: UIViewController {
         answerevalue = 0
         past_equation.text = ""
     }
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        
-        // Show the navigation bar on other view controllers
-        self.navigationController?.setNavigationBarHidden(false, animated: animated)
-    }
+//    override func viewWillDisappear(_ animated: Bool) {
+//        super.viewWillDisappear(animated)
+//
+//        // Show the navigation bar on other view controllers
+//        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+//    }
     /*
     // MARK: - Navigation
 

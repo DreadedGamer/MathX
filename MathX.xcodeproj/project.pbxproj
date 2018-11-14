@@ -34,7 +34,6 @@
 		FE6AB25E2137E1FF006FABE4 /* searchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6AB25D2137E1FF006FABE4 /* searchTableViewController.swift */; };
 		FE6AB26A2137FBA6006FABE4 /* Algebraic Manipulation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB2622137FAB6006FABE4 /* Algebraic Manipulation.pdf */; };
 		FE6AB26B2137FBA6006FABE4 /* Data Handling.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB2642137FAB6006FABE4 /* Data Handling.pdf */; };
-		FE6AB26C2137FBA6006FABE4 /* Estimation and Approximation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB2612137FAB6006FABE4 /* Estimation and Approximation.pdf */; };
 		FE6AB26D2137FBA6006FABE4 /* Geometrical Constructions.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB2662137FAB7006FABE4 /* Geometrical Constructions.pdf */; };
 		FE6AB26E2137FBA6006FABE4 /* Integers, Rational and Real Numbers.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB2632137FAB6006FABE4 /* Integers, Rational and Real Numbers.pdf */; };
 		FE6AB26F2137FBA6006FABE4 /* Linear Equations and Formula.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB2672137FAB7006FABE4 /* Linear Equations and Formula.pdf */; };
@@ -43,18 +42,6 @@
 		FE6AB2722137FBA6006FABE4 /* Simple Inequalities.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB2692137FAB7006FABE4 /* Simple Inequalities.pdf */; };
 		FE6AB274213815C3006FABE4 /* 2000px-Rapporteur_180deg.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB273213815C2006FABE4 /* 2000px-Rapporteur_180deg.svg.png */; };
 		FE6AB27621381638006FABE4 /* 200px-Rtriangle.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB27521381637006FABE4 /* 200px-Rtriangle.svg.png */; };
-		FE6AB284213837FB006FABE4 /* Estimation and Approximation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB279213837FA006FABE4 /* Estimation and Approximation.pdf */; };
-		FE6AB285213837FB006FABE4 /* Pythagoras Theorem and Trigonometry.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB27A213837FA006FABE4 /* Pythagoras Theorem and Trigonometry.pdf */; };
-		FE6AB286213837FB006FABE4 /* Matrices.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB27B213837FA006FABE4 /* Matrices.pdf */; };
-		FE6AB287213837FB006FABE4 /* Simultaneous Equations.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB27C213837FA006FABE4 /* Simultaneous Equations.pdf */; };
-		FE6AB288213837FB006FABE4 /* Probability.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB27D213837FA006FABE4 /* Probability.pdf */; };
-		FE6AB289213837FB006FABE4 /* Set Language and Notation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB27E213837FA006FABE4 /* Set Language and Notation.pdf */; };
-		FE6AB28A213837FB006FABE4 /* Graphs of Quadratic Functions.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB27F213837FA006FABE4 /* Graphs of Quadratic Functions.pdf */; };
-		FE6AB28B213837FB006FABE4 /* Algebraic Expressions and Formulae.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB280213837FA006FABE4 /* Algebraic Expressions and Formulae.pdf */; };
-		FE6AB28C213837FB006FABE4 /* Equations and Inequalities.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB281213837FB006FABE4 /* Equations and Inequalities.pdf */; };
-		FE6AB28D213837FB006FABE4 /* Congruency and Similarity.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB282213837FB006FABE4 /* Congruency and Similarity.pdf */; };
-		FE6AB28E213837FB006FABE4 /* Direct and Inverse Proportions.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB283213837FB006FABE4 /* Direct and Inverse Proportions.pdf */; };
-		FE6AB29021391927006FABE4 /* Ratio and proportion.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE6AB28F21391926006FABE4 /* Ratio and proportion.pdf */; };
 		FE70496B21147EEF00687FB0 /* Screen Shot 2018-08-03 at 8.13.13 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = FE70496A21147EEF00687FB0 /* Screen Shot 2018-08-03 at 8.13.13 PM.png */; };
 		FE70496D21148A4400687FB0 /* advancedcalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE70496C21148A4400687FB0 /* advancedcalculatorViewController.swift */; };
 		FE70497521153D9500687FB0 /* levelselectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE70497421153D9500687FB0 /* levelselectionViewController.swift */; };
@@ -64,9 +51,30 @@
 		FE7049842116FA3E00687FB0 /* math-1547018_960_720.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE7049802116FA3E00687FB0 /* math-1547018_960_720.jpg */; };
 		FE704986211C3C9800687FB0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE704985211C3C9800687FB0 /* DetailViewController.swift */; };
 		FE72393E212AF29D00CD791C /* resultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE72393D212AF29D00CD791C /* resultViewController.swift */; };
-		FED4A6A1212D2351000AD0B3 /* GamesWithAnimals.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FED4A6A0212D2351000AD0B3 /* GamesWithAnimals.pdf */; };
+		FEA3809E2146A3700005DE02 /* geometryformulasheet-140423094437-phpapp02-thumbnail-4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEA3809C2146A36F0005DE02 /* geometryformulasheet-140423094437-phpapp02-thumbnail-4.jpg */; };
+		FEA3809F2146A3700005DE02 /* 6077337402_eda19cc5b8_b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEA3809D2146A36F0005DE02 /* 6077337402_eda19cc5b8_b.jpg */; };
 		FED4A6A3212D45DF000AD0B3 /* AllToolViewContollers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED4A6A2212D45DF000AD0B3 /* AllToolViewContollers.swift */; };
-		FEDB85F5210F080300585639 /* Prime Numbers, Highest Common Factor, Lowest Common Multiple.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FEDB85F4210F080300585639 /* Prime Numbers, Highest Common Factor, Lowest Common Multiple.pdf */; };
+		FEF707B3215E1A6100DDC263 /* Probability in Resources */ = {isa = PBXBuildFile; fileRef = FEF707A7215E1A6000DDC263 /* Probability */; };
+		FEF707B4215E1A6100DDC263 /* Graphs of Quadratic Functions in Resources */ = {isa = PBXBuildFile; fileRef = FEF707A8215E1A6000DDC263 /* Graphs of Quadratic Functions */; };
+		FEF707B5215E1A6100DDC263 /* Equations and Inequalities in Resources */ = {isa = PBXBuildFile; fileRef = FEF707A9215E1A6000DDC263 /* Equations and Inequalities */; };
+		FEF707B6215E1A6100DDC263 /* Set Language and Notation in Resources */ = {isa = PBXBuildFile; fileRef = FEF707AA215E1A6000DDC263 /* Set Language and Notation */; };
+		FEF707B7215E1A6100DDC263 /* Pythagoras Theorem and Trigonometry in Resources */ = {isa = PBXBuildFile; fileRef = FEF707AB215E1A6000DDC263 /* Pythagoras Theorem and Trigonometry */; };
+		FEF707B8215E1A6100DDC263 /* Matrices in Resources */ = {isa = PBXBuildFile; fileRef = FEF707AC215E1A6000DDC263 /* Matrices */; };
+		FEF707B9215E1A6100DDC263 /* Estimation and Approximation in Resources */ = {isa = PBXBuildFile; fileRef = FEF707AD215E1A6000DDC263 /* Estimation and Approximation */; };
+		FEF707BA215E1A6100DDC263 /* Algebraic Expressions and Formulae in Resources */ = {isa = PBXBuildFile; fileRef = FEF707AE215E1A6100DDC263 /* Algebraic Expressions and Formulae */; };
+		FEF707BB215E1A6100DDC263 /* Direct and Inverse Proportions in Resources */ = {isa = PBXBuildFile; fileRef = FEF707AF215E1A6100DDC263 /* Direct and Inverse Proportions */; };
+		FEF707BC215E1A6100DDC263 /* Congruency and Similarity in Resources */ = {isa = PBXBuildFile; fileRef = FEF707B0215E1A6100DDC263 /* Congruency and Similarity */; };
+		FEF707BD215E1A6100DDC263 /* Simultaneous Equations in Resources */ = {isa = PBXBuildFile; fileRef = FEF707B1215E1A6100DDC263 /* Simultaneous Equations */; };
+		FEF707BE215E1A6100DDC263 /* Ratio and proportion in Resources */ = {isa = PBXBuildFile; fileRef = FEF707B2215E1A6100DDC263 /* Ratio and proportion */; };
+		FEF707CC215E1F3700DDC263 /* Geometrical Constructions in Resources */ = {isa = PBXBuildFile; fileRef = FEF707C2215E1F3600DDC263 /* Geometrical Constructions */; };
+		FEF707CD215E1F3700DDC263 /* Integers, Rational and Real Numbers in Resources */ = {isa = PBXBuildFile; fileRef = FEF707C3215E1F3600DDC263 /* Integers, Rational and Real Numbers */; };
+		FEF707CE215E1F3700DDC263 /* Perimeter and Area of plane figures in Resources */ = {isa = PBXBuildFile; fileRef = FEF707C4215E1F3700DDC263 /* Perimeter and Area of plane figures */; };
+		FEF707CF215E1F3700DDC263 /* Data Handling in Resources */ = {isa = PBXBuildFile; fileRef = FEF707C5215E1F3700DDC263 /* Data Handling */; };
+		FEF707D0215E1F3700DDC263 /* Simple Inequalities in Resources */ = {isa = PBXBuildFile; fileRef = FEF707C6215E1F3700DDC263 /* Simple Inequalities */; };
+		FEF707D2215E1F3700DDC263 /* Algebraic Manipulation in Resources */ = {isa = PBXBuildFile; fileRef = FEF707C8215E1F3700DDC263 /* Algebraic Manipulation */; };
+		FEF707D6215E217200DDC263 /* Linear Equations and Formula in Resources */ = {isa = PBXBuildFile; fileRef = FEF707D5215E217200DDC263 /* Linear Equations and Formula */; };
+		FEF707D8215E219300DDC263 /* Linear Functions and Graphs in Resources */ = {isa = PBXBuildFile; fileRef = FEF707D7215E219300DDC263 /* Linear Functions and Graphs */; };
+		FEF707DA215E21D600DDC263 /* Prime Numbers, Highest Common Factor, Lowest Common Multiple in Resources */ = {isa = PBXBuildFile; fileRef = FEF707D9215E21D600DDC263 /* Prime Numbers, Highest Common Factor, Lowest Common Multiple */; };
 		FEFC6D4E21285881003DF6EC /* Screen Shot 2018-08-18 at 9.35.58 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = FEFC6D4D21285881003DF6EC /* Screen Shot 2018-08-18 at 9.35.58 PM.png */; };
 /* End PBXBuildFile section */
 
@@ -100,7 +108,6 @@
 		FE6AB2562136AEBD006FABE4 /* String+Substring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Substring.swift"; sourceTree = "<group>"; };
 		FE6AB2592136AF0D006FABE4 /* Solving_Quadratic_Equations.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Solving_Quadratic_Equations.xcdatamodel; sourceTree = "<group>"; };
 		FE6AB25D2137E1FF006FABE4 /* searchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchTableViewController.swift; sourceTree = "<group>"; };
-		FE6AB2612137FAB6006FABE4 /* Estimation and Approximation.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Estimation and Approximation.pdf"; sourceTree = "<group>"; };
 		FE6AB2622137FAB6006FABE4 /* Algebraic Manipulation.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Algebraic Manipulation.pdf"; sourceTree = "<group>"; };
 		FE6AB2632137FAB6006FABE4 /* Integers, Rational and Real Numbers.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Integers, Rational and Real Numbers.pdf"; sourceTree = "<group>"; };
 		FE6AB2642137FAB6006FABE4 /* Data Handling.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Data Handling.pdf"; sourceTree = "<group>"; };
@@ -111,18 +118,6 @@
 		FE6AB2692137FAB7006FABE4 /* Simple Inequalities.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Simple Inequalities.pdf"; sourceTree = "<group>"; };
 		FE6AB273213815C2006FABE4 /* 2000px-Rapporteur_180deg.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2000px-Rapporteur_180deg.svg.png"; sourceTree = "<group>"; };
 		FE6AB27521381637006FABE4 /* 200px-Rtriangle.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "200px-Rtriangle.svg.png"; sourceTree = "<group>"; };
-		FE6AB279213837FA006FABE4 /* Estimation and Approximation.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Estimation and Approximation.pdf"; path = "../../missing gifs higher chinese/Estimation and Approximation.pdf"; sourceTree = "<group>"; };
-		FE6AB27A213837FA006FABE4 /* Pythagoras Theorem and Trigonometry.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Pythagoras Theorem and Trigonometry.pdf"; sourceTree = "<group>"; };
-		FE6AB27B213837FA006FABE4 /* Matrices.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Matrices.pdf; sourceTree = "<group>"; };
-		FE6AB27C213837FA006FABE4 /* Simultaneous Equations.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Simultaneous Equations.pdf"; sourceTree = "<group>"; };
-		FE6AB27D213837FA006FABE4 /* Probability.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Probability.pdf; sourceTree = "<group>"; };
-		FE6AB27E213837FA006FABE4 /* Set Language and Notation.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Set Language and Notation.pdf"; sourceTree = "<group>"; };
-		FE6AB27F213837FA006FABE4 /* Graphs of Quadratic Functions.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Graphs of Quadratic Functions.pdf"; sourceTree = "<group>"; };
-		FE6AB280213837FA006FABE4 /* Algebraic Expressions and Formulae.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Algebraic Expressions and Formulae.pdf"; sourceTree = "<group>"; };
-		FE6AB281213837FB006FABE4 /* Equations and Inequalities.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Equations and Inequalities.pdf"; sourceTree = "<group>"; };
-		FE6AB282213837FB006FABE4 /* Congruency and Similarity.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Congruency and Similarity.pdf"; sourceTree = "<group>"; };
-		FE6AB283213837FB006FABE4 /* Direct and Inverse Proportions.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Direct and Inverse Proportions.pdf"; sourceTree = "<group>"; };
-		FE6AB28F21391926006FABE4 /* Ratio and proportion.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Ratio and proportion.pdf"; sourceTree = "<group>"; };
 		FE70496A21147EEF00687FB0 /* Screen Shot 2018-08-03 at 8.13.13 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2018-08-03 at 8.13.13 PM.png"; sourceTree = "<group>"; };
 		FE70496C21148A4400687FB0 /* advancedcalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = advancedcalculatorViewController.swift; sourceTree = "<group>"; };
 		FE70497421153D9500687FB0 /* levelselectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = levelselectionViewController.swift; sourceTree = "<group>"; };
@@ -132,9 +127,30 @@
 		FE7049802116FA3E00687FB0 /* math-1547018_960_720.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "math-1547018_960_720.jpg"; sourceTree = "<group>"; };
 		FE704985211C3C9800687FB0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		FE72393D212AF29D00CD791C /* resultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resultViewController.swift; sourceTree = "<group>"; };
-		FED4A6A0212D2351000AD0B3 /* GamesWithAnimals.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = GamesWithAnimals.pdf; sourceTree = "<group>"; };
+		FEA3809C2146A36F0005DE02 /* geometryformulasheet-140423094437-phpapp02-thumbnail-4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "geometryformulasheet-140423094437-phpapp02-thumbnail-4.jpg"; sourceTree = "<group>"; };
+		FEA3809D2146A36F0005DE02 /* 6077337402_eda19cc5b8_b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6077337402_eda19cc5b8_b.jpg; sourceTree = "<group>"; };
 		FED4A6A2212D45DF000AD0B3 /* AllToolViewContollers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllToolViewContollers.swift; sourceTree = "<group>"; };
-		FEDB85F4210F080300585639 /* Prime Numbers, Highest Common Factor, Lowest Common Multiple.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Prime Numbers, Highest Common Factor, Lowest Common Multiple.pdf"; sourceTree = "<group>"; };
+		FEF707A7215E1A6000DDC263 /* Probability */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Probability; sourceTree = "<group>"; };
+		FEF707A8215E1A6000DDC263 /* Graphs of Quadratic Functions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Graphs of Quadratic Functions"; sourceTree = "<group>"; };
+		FEF707A9215E1A6000DDC263 /* Equations and Inequalities */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Equations and Inequalities"; sourceTree = "<group>"; };
+		FEF707AA215E1A6000DDC263 /* Set Language and Notation */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Set Language and Notation"; sourceTree = "<group>"; };
+		FEF707AB215E1A6000DDC263 /* Pythagoras Theorem and Trigonometry */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Pythagoras Theorem and Trigonometry"; sourceTree = "<group>"; };
+		FEF707AC215E1A6000DDC263 /* Matrices */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Matrices; sourceTree = "<group>"; };
+		FEF707AD215E1A6000DDC263 /* Estimation and Approximation */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Estimation and Approximation"; sourceTree = "<group>"; };
+		FEF707AE215E1A6100DDC263 /* Algebraic Expressions and Formulae */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Algebraic Expressions and Formulae"; sourceTree = "<group>"; };
+		FEF707AF215E1A6100DDC263 /* Direct and Inverse Proportions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Direct and Inverse Proportions"; sourceTree = "<group>"; };
+		FEF707B0215E1A6100DDC263 /* Congruency and Similarity */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Congruency and Similarity"; sourceTree = "<group>"; };
+		FEF707B1215E1A6100DDC263 /* Simultaneous Equations */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Simultaneous Equations"; sourceTree = "<group>"; };
+		FEF707B2215E1A6100DDC263 /* Ratio and proportion */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Ratio and proportion"; sourceTree = "<group>"; };
+		FEF707C2215E1F3600DDC263 /* Geometrical Constructions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Geometrical Constructions"; sourceTree = "<group>"; };
+		FEF707C3215E1F3600DDC263 /* Integers, Rational and Real Numbers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Integers, Rational and Real Numbers"; sourceTree = "<group>"; };
+		FEF707C4215E1F3700DDC263 /* Perimeter and Area of plane figures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Perimeter and Area of plane figures"; sourceTree = "<group>"; };
+		FEF707C5215E1F3700DDC263 /* Data Handling */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Data Handling"; sourceTree = "<group>"; };
+		FEF707C6215E1F3700DDC263 /* Simple Inequalities */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Simple Inequalities"; sourceTree = "<group>"; };
+		FEF707C8215E1F3700DDC263 /* Algebraic Manipulation */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Algebraic Manipulation"; sourceTree = "<group>"; };
+		FEF707D5215E217200DDC263 /* Linear Equations and Formula */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Linear Equations and Formula"; sourceTree = "<group>"; };
+		FEF707D7215E219300DDC263 /* Linear Functions and Graphs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Linear Functions and Graphs"; sourceTree = "<group>"; };
+		FEF707D9215E21D600DDC263 /* Prime Numbers, Highest Common Factor, Lowest Common Multiple */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Prime Numbers, Highest Common Factor, Lowest Common Multiple"; sourceTree = "<group>"; };
 		FEFC6D4D21285881003DF6EC /* Screen Shot 2018-08-18 at 9.35.58 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2018-08-18 at 9.35.58 PM.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -223,6 +239,8 @@
 				AFA58A5F2043F0C900A227B9 /* note copy 2.png */,
 				AFA58A612043F0CA00A227B9 /* note copy.png */,
 				AFA58A602043F0C900A227B9 /* note.png */,
+				FEA3809D2146A36F0005DE02 /* 6077337402_eda19cc5b8_b.jpg */,
+				FEA3809C2146A36F0005DE02 /* geometryformulasheet-140423094437-phpapp02-thumbnail-4.jpg */,
 			);
 			path = Photos;
 			sourceTree = "<group>";
@@ -238,7 +256,6 @@
 		FE7049772116F9BF00687FB0 /* Pdfs */ = {
 			isa = PBXGroup;
 			children = (
-				FED4A6A0212D2351000AD0B3 /* GamesWithAnimals.pdf */,
 				FE70497B2116F9FA00687FB0 /* sec 4 */,
 				FE70497A2116F9F500687FB0 /* sec 3 */,
 				FE7049792116F9E400687FB0 /* sec 2 */,
@@ -250,16 +267,24 @@
 		FE7049782116F9DD00687FB0 /* sec 1 */ = {
 			isa = PBXGroup;
 			children = (
+				FEF707D5215E217200DDC263 /* Linear Equations and Formula */,
+				FEF707AD215E1A6000DDC263 /* Estimation and Approximation */,
+				FEF707C6215E1F3700DDC263 /* Simple Inequalities */,
+				FEF707C3215E1F3600DDC263 /* Integers, Rational and Real Numbers */,
+				FEF707C5215E1F3700DDC263 /* Data Handling */,
+				FEF707C2215E1F3600DDC263 /* Geometrical Constructions */,
+				FEF707C4215E1F3700DDC263 /* Perimeter and Area of plane figures */,
+				FEF707D7215E219300DDC263 /* Linear Functions and Graphs */,
+				FEF707C8215E1F3700DDC263 /* Algebraic Manipulation */,
 				FE6AB2622137FAB6006FABE4 /* Algebraic Manipulation.pdf */,
 				FE6AB2642137FAB6006FABE4 /* Data Handling.pdf */,
-				FE6AB2612137FAB6006FABE4 /* Estimation and Approximation.pdf */,
 				FE6AB2662137FAB7006FABE4 /* Geometrical Constructions.pdf */,
 				FE6AB2632137FAB6006FABE4 /* Integers, Rational and Real Numbers.pdf */,
 				FE6AB2672137FAB7006FABE4 /* Linear Equations and Formula.pdf */,
 				FE6AB2682137FAB7006FABE4 /* Linear Functions and Graphs.pdf */,
 				FE6AB2652137FAB7006FABE4 /* Perimeter and Area of plane figures.pdf */,
 				FE6AB2692137FAB7006FABE4 /* Simple Inequalities.pdf */,
-				FEDB85F4210F080300585639 /* Prime Numbers, Highest Common Factor, Lowest Common Multiple.pdf */,
+				FEF707D9215E21D600DDC263 /* Prime Numbers, Highest Common Factor, Lowest Common Multiple */,
 			);
 			name = "sec 1";
 			sourceTree = "<group>";
@@ -267,18 +292,17 @@
 		FE7049792116F9E400687FB0 /* sec 2 */ = {
 			isa = PBXGroup;
 			children = (
-				FE6AB28F21391926006FABE4 /* Ratio and proportion.pdf */,
-				FE6AB283213837FB006FABE4 /* Direct and Inverse Proportions.pdf */,
-				FE6AB279213837FA006FABE4 /* Estimation and Approximation.pdf */,
-				FE6AB27D213837FA006FABE4 /* Probability.pdf */,
-				FE6AB27A213837FA006FABE4 /* Pythagoras Theorem and Trigonometry.pdf */,
-				FE6AB27B213837FA006FABE4 /* Matrices.pdf */,
-				FE6AB27E213837FA006FABE4 /* Set Language and Notation.pdf */,
-				FE6AB27C213837FA006FABE4 /* Simultaneous Equations.pdf */,
-				FE6AB280213837FA006FABE4 /* Algebraic Expressions and Formulae.pdf */,
-				FE6AB27F213837FA006FABE4 /* Graphs of Quadratic Functions.pdf */,
-				FE6AB281213837FB006FABE4 /* Equations and Inequalities.pdf */,
-				FE6AB282213837FB006FABE4 /* Congruency and Similarity.pdf */,
+				FEF707B1215E1A6100DDC263 /* Simultaneous Equations */,
+				FEF707AC215E1A6000DDC263 /* Matrices */,
+				FEF707AA215E1A6000DDC263 /* Set Language and Notation */,
+				FEF707AE215E1A6100DDC263 /* Algebraic Expressions and Formulae */,
+				FEF707A7215E1A6000DDC263 /* Probability */,
+				FEF707A8215E1A6000DDC263 /* Graphs of Quadratic Functions */,
+				FEF707A9215E1A6000DDC263 /* Equations and Inequalities */,
+				FEF707B0215E1A6100DDC263 /* Congruency and Similarity */,
+				FEF707B2215E1A6100DDC263 /* Ratio and proportion */,
+				FEF707AB215E1A6000DDC263 /* Pythagoras Theorem and Trigonometry */,
+				FEF707AF215E1A6100DDC263 /* Direct and Inverse Proportions */,
 			);
 			name = "sec 2";
 			sourceTree = "<group>";
@@ -344,6 +368,7 @@
 				TargetAttributes = {
 					AFA58A262043E84200A227B9 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
@@ -376,50 +401,58 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEF707D2215E1F3700DDC263 /* Algebraic Manipulation in Resources */,
+				FEF707B8215E1A6100DDC263 /* Matrices in Resources */,
+				FEF707CE215E1F3700DDC263 /* Perimeter and Area of plane figures in Resources */,
+				FEF707B9215E1A6100DDC263 /* Estimation and Approximation in Resources */,
+				FEA3809F2146A3700005DE02 /* 6077337402_eda19cc5b8_b.jpg in Resources */,
 				FE6AB26A2137FBA6006FABE4 /* Algebraic Manipulation.pdf in Resources */,
 				FE6AB26B2137FBA6006FABE4 /* Data Handling.pdf in Resources */,
-				FE6AB29021391927006FABE4 /* Ratio and proportion.pdf in Resources */,
-				FE6AB26C2137FBA6006FABE4 /* Estimation and Approximation.pdf in Resources */,
-				FE6AB285213837FB006FABE4 /* Pythagoras Theorem and Trigonometry.pdf in Resources */,
 				FE6AB26D2137FBA6006FABE4 /* Geometrical Constructions.pdf in Resources */,
-				FE6AB28C213837FB006FABE4 /* Equations and Inequalities.pdf in Resources */,
 				FE6AB26E2137FBA6006FABE4 /* Integers, Rational and Real Numbers.pdf in Resources */,
 				FE6AB26F2137FBA6006FABE4 /* Linear Equations and Formula.pdf in Resources */,
 				FE6AB2702137FBA6006FABE4 /* Linear Functions and Graphs.pdf in Resources */,
-				FE6AB286213837FB006FABE4 /* Matrices.pdf in Resources */,
 				FE6AB2712137FBA6006FABE4 /* Perimeter and Area of plane figures.pdf in Resources */,
+				FEF707BA215E1A6100DDC263 /* Algebraic Expressions and Formulae in Resources */,
 				FE6AB274213815C3006FABE4 /* 2000px-Rapporteur_180deg.svg.png in Resources */,
+				FEF707B5215E1A6100DDC263 /* Equations and Inequalities in Resources */,
+				FEF707CD215E1F3700DDC263 /* Integers, Rational and Real Numbers in Resources */,
+				FEF707D0215E1F3700DDC263 /* Simple Inequalities in Resources */,
 				FE6AB2722137FBA6006FABE4 /* Simple Inequalities.pdf in Resources */,
-				FE6AB28D213837FB006FABE4 /* Congruency and Similarity.pdf in Resources */,
-				FE6AB28B213837FB006FABE4 /* Algebraic Expressions and Formulae.pdf in Resources */,
-				FE6AB28E213837FB006FABE4 /* Direct and Inverse Proportions.pdf in Resources */,
 				AFA58A3D2043EA8B00A227B9 /* Screen Shot 2018-01-12 at 8.46.23 AM.png in Resources */,
 				FE70496B21147EEF00687FB0 /* Screen Shot 2018-08-03 at 8.13.13 PM.png in Resources */,
-				FED4A6A1212D2351000AD0B3 /* GamesWithAnimals.pdf in Resources */,
 				AFA58A622043F0CA00A227B9 /* note copy 2.png in Resources */,
+				FEF707B6215E1A6100DDC263 /* Set Language and Notation in Resources */,
 				AF47CEA02072261D00949253 /* OrionLogoWhite.png in Resources */,
-				FEDB85F5210F080300585639 /* Prime Numbers, Highest Common Factor, Lowest Common Multiple.pdf in Resources */,
+				FEF707BB215E1A6100DDC263 /* Direct and Inverse Proportions in Resources */,
+				FEF707B4215E1A6100DDC263 /* Graphs of Quadratic Functions in Resources */,
 				FEFC6D4E21285881003DF6EC /* Screen Shot 2018-08-18 at 9.35.58 PM.png in Resources */,
 				AFA58A352043E84200A227B9 /* LaunchScreen.storyboard in Resources */,
 				AFA58A322043E84200A227B9 /* Assets.xcassets in Resources */,
-				FE6AB287213837FB006FABE4 /* Simultaneous Equations.pdf in Resources */,
 				FE6AB27621381638006FABE4 /* 200px-Rtriangle.svg.png in Resources */,
+				FEF707BE215E1A6100DDC263 /* Ratio and proportion in Resources */,
+				FEF707B3215E1A6100DDC263 /* Probability in Resources */,
 				AFA58A632043F0CA00A227B9 /* note.png in Resources */,
+				FEF707D8215E219300DDC263 /* Linear Functions and Graphs in Resources */,
+				FEF707DA215E21D600DDC263 /* Prime Numbers, Highest Common Factor, Lowest Common Multiple in Resources */,
+				FEF707D6215E217200DDC263 /* Linear Equations and Formula in Resources */,
 				AFA58A562043EFA400A227B9 /* calculator.png in Resources */,
-				FE6AB284213837FB006FABE4 /* Estimation and Approximation.pdf in Resources */,
 				AFA58A302043E84200A227B9 /* Main.storyboard in Resources */,
+				FEF707BD215E1A6100DDC263 /* Simultaneous Equations in Resources */,
 				FE7049842116FA3E00687FB0 /* math-1547018_960_720.jpg in Resources */,
-				FE6AB289213837FB006FABE4 /* Set Language and Notation.pdf in Resources */,
+				FEA3809E2146A3700005DE02 /* geometryformulasheet-140423094437-phpapp02-thumbnail-4.jpg in Resources */,
+				FEF707CC215E1F3700DDC263 /* Geometrical Constructions in Resources */,
 				AFA58A5E2043F0C200A227B9 /* cheatsheet copy 2.png in Resources */,
 				AFA58A5C2043F0C200A227B9 /* cheatsheet copy.png in Resources */,
+				FEF707BC215E1A6100DDC263 /* Congruency and Similarity in Resources */,
 				FE7049822116FA3E00687FB0 /* download.jpeg in Resources */,
 				AF2763C2207210460070787B /* ethnocentric rg it.ttf in Resources */,
 				AFA58A642043F0CA00A227B9 /* note copy.png in Resources */,
+				FEF707CF215E1F3700DDC263 /* Data Handling in Resources */,
 				FE7049812116FA3E00687FB0 /* Pure-mathematics-formulæ-blackboard.jpg in Resources */,
-				FE6AB28A213837FB006FABE4 /* Graphs of Quadratic Functions.pdf in Resources */,
-				FE6AB288213837FB006FABE4 /* Probability.pdf in Resources */,
 				FE7049832116FA3E00687FB0 /* mathematics-989124_960_720.jpg in Resources */,
 				AF2763BF20720E780070787B /* cooltext280879586962584 copy.png in Resources */,
+				FEF707B7215E1A6100DDC263 /* Pythagoras Theorem and Trigonometry in Resources */,
 				AFA58A5D2043F0C200A227B9 /* cheatsheet.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -639,11 +672,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FU2A8TG5WK;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = MathX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-lol.mathx";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -655,11 +689,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FU2A8TG5WK;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = MathX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-lol.mathx";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

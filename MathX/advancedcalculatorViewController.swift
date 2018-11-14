@@ -9,7 +9,6 @@ import Expression
 import UIKit
 
 class advancedcalculatorViewController: UIViewController, UITextFieldDelegate,UITableViewDelegate,UITableViewDataSource {
-    @IBOutlet var Back: UIButton!
     var array : [String] = ["Sqrt(x)","Floor(x)","Ceil(x)","Round(x)","Cos(x)","Acos(x)","Sin(x)","Asin(x)","Tan(x)","Atan(x)","Abs(x)","Pow(x,y)","Atan2(x,y)","Mod(x,y)"]
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -29,13 +28,8 @@ class advancedcalculatorViewController: UIViewController, UITextFieldDelegate,UI
         label?.text = array[indexPath.row]
         return cell
     }
-    @IBAction func Reset(_ sender: Any) {
-        outputview.text = "Regular operators like \" + , - , / , * \" are supported."
-        
-        inputField.resignFirstResponder()
-        inputField.text = ""
-        answerevalue = -1.0
-    }
+    
+    
     
     @IBOutlet var outputview: UITextView!
     @IBOutlet var inputField: UITextField!
@@ -44,28 +38,56 @@ class advancedcalculatorViewController: UIViewController, UITextFieldDelegate,UI
     
     private func addOutput(_ string: String, color: UIColor) {
         let text = NSAttributedString(string: string + "\n\n", attributes: [
-            NSAttributedStringKey.foregroundColor: color,
-            NSAttributedStringKey.font: outputview.font!,
+            NSAttributedString.Key.foregroundColor: color,
+            NSAttributedString.Key.font: outputview.font!,
             ])
         
         output.replaceCharacters(in: NSMakeRange(0, 0), with: text)
         outputview.attributedText = output
     }
-    
+    @objc func addTapped() {
+        outputview.text = "Regular operators like \" + , - , / , * \" are supported."
+        inputField.resignFirstResponder()
+        inputField.text = ""
+        answerevalue = -1.0
+    }
     @IBOutlet var tableview: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideKeyboardWhenTappedAround()
         output.append(outputview.attributedText)
         tableview.delegate = self
         tableview.dataSource = self
         tableview.rowHeight = 70
-        Back.layer.cornerRadius = 10;
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Reset", style: .plain, target: self, action: #selector(addTapped))
         
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
         if var text = textField.text, text != "" {
             text = text.lowercased()
+            if(text == "kangjingisbetterthanonnkitinmath"){
+                addOutput("Its always True", color: .black)
+                return false
+            }
+            if(text == "onnkitisbetterthankangjinginmath"){
+                addOutput("Its always False", color: .black)
+                return false
+            }
+            if(text == "mryeo"){
+                addOutput("The all mighty Mr Yeo", color: .black)
+                return false
+            }
+            
+            if(text.replacingOccurrences(of: " ", with: "") == "1/0"){
+                addOutput("Imagine that you have zero cookies,and you split them evenly among zero friends. How many cookies does each person get? See? It doesn’t make sense.", color: .black)
+                return false
+            }
+            if(text.replacingOccurrences(of: " ", with: "") == "meaningoflife"){
+                addOutput("42", color: .black)
+                return false
+            }
             text = text.replacingOccurrences(of: ")(", with: ")*(")
             text = text.replacingOccurrences(of: "--", with: "+")
             var st1ring = "+"

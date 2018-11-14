@@ -11,8 +11,8 @@ import UIKit
 class searchTableViewController: UITableViewController,UISearchBarDelegate{
 
     @IBOutlet var searchbar: UISearchBar!
-    let data = ["hcf and lcm calculator","matrix","set language","quaratic equations","Grapher","Potractor","Trigo calculator"]
-    
+    let data = ["Calculator","Hcf and Lcm Calculator","Matrix","Set Language","Quadratic Equations","Grapher","Protractor","Trigonometry Calculator","Geometry Formulas","Radomise"]
+    //please do not change names, can change uppercase and lower case
     var filteredData: [String]!
     
     
@@ -36,7 +36,8 @@ class searchTableViewController: UITableViewController,UISearchBarDelegate{
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let newViewController = storyBoard.instantiateViewController(withIdentifier: data[indexPath.row])
+        
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: data[indexPath.row].lowercased())
         self.navigationController?.pushViewController(newViewController, animated: true)
 
     }

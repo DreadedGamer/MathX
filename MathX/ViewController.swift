@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         
         btnSolve.titleLabel?.adjustsFontSizeToFitWidth = false
         let swipe: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
-        swipe.direction = UISwipeGestureRecognizerDirection.down
+        swipe.direction = UISwipeGestureRecognizer.Direction.down
         self.view.addGestureRecognizer(swipe)
     }
     
